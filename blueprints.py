@@ -63,11 +63,16 @@ class Blueprint(object):
 			(191,  16, 250): 'W', # ?
 			(255, 127,  39): 'b', # ?
 			(130,  52,   0): 'c', # ?
-			(255, 127,  39): 'e'  # ?
+			(255, 127,  39): 'e', # ?
+			(237,  28,  36): 'f', # ?
+			(153, 217, 234): 'g', # ?
+			( 34, 177,  76): 'h', # ?
+			(185, 122,  87): 'i'  # ?
 		}
 
-		for layer in verticalBorders:
-			layers.append([[blockmap[pixels[x,y]] for x in range(1, framesize[0]-1)] for y in range(1, framesize[1]-1)])
+		for layer in verticalBorders[:-1]:
+			print(layer)
+			layers.append([[blockmap[pixels[x+layer,y]] for x in range(1, framesize[0]-1)] for y in range(1, framesize[1]-1)])
 
 		for l in layers:
 			print(showLayer(l))
