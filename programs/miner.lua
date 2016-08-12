@@ -1,6 +1,6 @@
 -- miner.lua
 
-os.loadAPI('vector') --
+-- os.loadAPI('vector') --
 
 local vec = vector
 
@@ -17,21 +17,27 @@ local function range(fr,to)
 end
 
 
-local Range.lift(r)
+
+-- function Range.__tostring(r)
+--   local s = ''
+-- end
+
+
+function Range.lift(r)
   setmetatable(r, Range)
   return r
 end
 
 
 function Range.map(r, f)
-  local new = {}
+  new = {}
   for i=1, #r do new[i] = f(r[i]) end
   setmetatable(new, Range)
   return new
 end
 
 
-local function Range.filter(r, p)
+function Range.filter(r, p)
   local new = {}
   for i=1,#r do
   	if p(r[i]) then new[#new+1] = r[i] end
@@ -41,63 +47,72 @@ local function Range.filter(r, p)
 end
 
 
+-- Navigation helpers
+-- local bearings = { pos    = vec(0, 0, 0),
+--                    facing = vec(0, 0, 1)}
+
+-- Inventory helpers
+local inventory = {}
+
+
 -- Mining helpers
 local miner = {}
 
-local function miner.digAll()
+
+function miner.digAll()
   turtle.digUp()
   turtle.digDown()
   turtle.dig()
 end
 
 
-local function miner.move(v) end
+function miner.move(v) end
 
 
-local function miner.left()
-
-end
-
-
-local function miner.right()
+function miner.left()
 
 end
 
 
-local function miner.up()
+function miner.right()
 
 end
 
 
-local function miner.down()
+function miner.up()
 
 end
 
 
-local function miner.forward()
+function miner.down()
+
+end
+
+
+function miner.forward()
 
 end
 
 
 
-local function miner.back()
+function miner.back()
 
 end
 
 
-local function miner.refuel()
+function miner.refuel()
   range(1,9):map(function (n)
     turtle.select(n)
   end)
 end
 
 
-local function miner.unload()
+function miner.unload()
 
 end
 
 
-local function miner.descend()
+function miner.descend()
   -- Dig down so that the turtle is positioned between two
   -- unexcavated layers (and in level with a third one)
   if turtle.detectDown() then turtle.digDown() end -- TODO: Is the turtle faster with this check?
@@ -107,7 +122,7 @@ local function miner.descend()
 end
 
 
-local function miner.toBedrock(dx, dz, rightWhen)
+function miner.toBedrock(dx, dz, rightWhen)
   -- TODO: Rename 'rightWhen' param (?)
 end
 
@@ -135,10 +150,16 @@ function excavateThree(dx, dz, rightWhen)
     if x < dx then
       local turn = (x%2 == rightWhen) and miner.right or miner.left
       turn()
-      miner.digAll()
+      turtle.dig()
       miner.forward()
       turn()
     end
 
   end
 end
+
+
+
+-- for i, n in ipairs(range(5,20):map(function(x) return x*x end)) do
+--   print(n)
+-- end
