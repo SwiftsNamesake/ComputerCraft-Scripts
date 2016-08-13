@@ -68,6 +68,6 @@ end
 
 
 -- Comparison
-function equals(v, other)
+function Vector.meta.__eq(v, other)
   return (v.x == other.x) and (v.y == other.y) and (v.z == other.z)
 end
