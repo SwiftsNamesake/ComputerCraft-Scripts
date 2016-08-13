@@ -28,7 +28,8 @@ end
 -- 
 function Vector.meta.__index(v, key)
   if key == 'x' then return v[1] end
-  if key == 'x' then return v[1] end
+  if key == 'y' then return v[2] end
+  if key == 'z' then return v[3] end
   return Vector.ops[key]
 end
 
@@ -46,7 +47,7 @@ end
 
 
 function Vector.ops.abs(v)
-  return new()
+  return new(math.sqrt(v.x*v.x + v.y*v.y + v.z*v.z), 0, 0)
 end
 
 
@@ -61,9 +62,9 @@ function Vector.meta.__sub(v, other)
 end
 
 
-function Vector.meta.__mul(v, other)
-  return new(v.x*other.x - v.y*other.y, v.x*other.y + v.y*other.x)
-end
+-- function Vector.meta.__mul(v, other)
+  -- return new(v.x*other.x - v.y*other.y, v.x*other.y + v.y*other.x)
+-- end
 
 
 -- Comparison
