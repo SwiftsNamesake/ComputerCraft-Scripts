@@ -1,0 +1,2082 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"righ",
+				"rightWhen"
+			],
+			[
+				"white",
+				"whitespace"
+			],
+			[
+				"parseOBJ",
+				"parseOBJRow"
+			],
+			[
+				"Ma",
+				"MalformedURLException"
+			],
+			[
+				"image",
+				"imageSurfaceSize"
+			],
+			[
+				"imag",
+				"imageSurfaceGetWidth"
+			],
+			[
+				"make",
+				"makeBoundingBoxSideLens"
+			],
+			[
+				"lin",
+				"lineTo"
+			],
+			[
+				"anc",
+				"anchorpoint"
+			],
+			[
+				"onm",
+				"onmouseup"
+			],
+			[
+				"onmo",
+				"onmousedown"
+			],
+			[
+				"per",
+				"perhapsBind"
+			],
+			[
+				"sate",
+				"stateref"
+			],
+			[
+				"onbu",
+				"onbuttonpress"
+			],
+			[
+				"re",
+				"rectangle"
+			],
+			[
+				"ma",
+				"makeApp"
+			],
+			[
+				"makeApp",
+				"malkeapp"
+			],
+			[
+				"se",
+				"section	section"
+			],
+			[
+				"gr",
+				"gridM_"
+			],
+			[
+				"qu",
+				"qualified"
+			],
+			[
+				"lif",
+				"liftIO"
+			],
+			[
+				"Bou",
+				"BoundingBox"
+			],
+			[
+				"appstate",
+				"appstate"
+			],
+			[
+				"wi",
+				"window"
+			],
+			[
+				"ond",
+				"ondelete"
+			],
+			[
+				"mo",
+				"motionNotifyEvent"
+			],
+			[
+				"app",
+				"appstate"
+			],
+			[
+				"on",
+				"onmousemotion"
+			],
+			[
+				"create",
+				"createWindowWithCanvas"
+			],
+			[
+				"OBJNo",
+				"OBJNoParse"
+			],
+			[
+				"attr",
+				"attributes"
+			],
+			[
+				"bo",
+				"boundingbox"
+			],
+			[
+				"pu",
+				"putStr"
+			],
+			[
+				"Uni",
+				"UniformValue"
+			],
+			[
+				"arg",
+				"argument"
+			],
+			[
+				"Unifor",
+				"Uniform"
+			],
+			[
+				"Unif",
+				"UniformLocation"
+			],
+			[
+				"dept",
+				"depthMask"
+			],
+			[
+				"model",
+				"modelview"
+			],
+			[
+				"pre",
+				"prepare"
+			],
+			[
+				"Bo",
+				"BoundingBox"
+			],
+			[
+				"Text",
+				"Texture2D"
+			],
+			[
+				"mode",
+				"modelview"
+			],
+			[
+				"UM",
+				"UMatrix44"
+			],
+			[
+				"tex",
+				"texture"
+			],
+			[
+				"te",
+				"texture"
+			],
+			[
+				"un",
+				"unlines"
+			],
+			[
+				"Tex",
+				"TexCoords"
+			],
+			[
+				"newtype",
+				"newtype"
+			],
+			[
+				"unif",
+				"uniformLocation"
+			],
+			[
+				"def",
+				"defaultMatrixUniforms"
+			],
+			[
+				"read",
+				"readTexture"
+			],
+			[
+				"text",
+				"textures"
+			],
+			[
+				"rad",
+				"radians"
+			],
+			[
+				"QU",
+				"fromQuaternion"
+			],
+			[
+				"pro",
+				"projection"
+			],
+			[
+				"modl",
+				"modelview"
+			],
+			[
+				"crea",
+				"createPrograms"
+			],
+			[
+				"vert",
+				"vertices"
+			],
+			[
+				"clear",
+				"clearColor"
+			],
+			[
+				"mesh",
+				"meshes"
+			],
+			[
+				"aV",
+				"aVertexColor"
+			],
+			[
+				"Um",
+				"UMatrix44"
+			],
+			[
+				"mod",
+				"modelview"
+			],
+			[
+				"vertex",
+				"vertexAttribArray"
+			],
+			[
+				"bin",
+				"bindAttributes"
+			],
+			[
+				"Buf",
+				"BufferObject"
+			],
+			[
+				"bu",
+				"bufferAttribute"
+			],
+			[
+				"set",
+				"setUniform"
+			],
+			[
+				"attrib",
+				"attributeLocation"
+			],
+			[
+				"Attr",
+				"AttribLocation"
+			],
+			[
+				"attri",
+				"attribLocation"
+			],
+			[
+				"verte",
+				"vertexAttribArray"
+			],
+			[
+				"nor",
+				"normalattrib"
+			],
+			[
+				"GL",
+				"GLUtil"
+			],
+			[
+				"Sh",
+				"ShaderProgram"
+			],
+			[
+				"ti",
+				"triangles"
+			],
+			[
+				"putSt",
+				"putStrLn"
+			],
+			[
+				"conte",
+				"getDirectoryContents"
+			],
+			[
+				"get",
+				"getDirectoryContents"
+			],
+			[
+				"colour",
+				"colourattrib"
+			],
+			[
+				"aVertex",
+				"aVertexPosition"
+			],
+			[
+				"print",
+				"printError"
+			],
+			[
+				"Uniform",
+				"uniformLocation"
+			],
+			[
+				"aVe",
+				"aVertexColor"
+			],
+			[
+				"aVer",
+				"aVertexPosition"
+			],
+			[
+				"col",
+				"colourAttrib"
+			],
+			[
+				"Not",
+				"Nothing"
+			],
+			[
+				"setM",
+				"setShaderUniforms"
+			],
+			[
+				"stae",
+				"stateref"
+			],
+			[
+				"createSh",
+				"createShaderProgram"
+			],
+			[
+				"Lad",
+				"Loading"
+			],
+			[
+				"materi",
+				"material"
+			],
+			[
+				"state",
+				"stateref"
+			],
+			[
+				"wit",
+				"withoutComment"
+			],
+			[
+				"with",
+				"withXYZ"
+			],
+			[
+				"OBJ",
+				"OBJTexture"
+			],
+			[
+				"Mode",
+				"Modelview"
+			],
+			[
+				"verit",
+				"verticesOf"
+			],
+			[
+				"normal",
+				"normalAt"
+			],
+			[
+				"mate",
+				"materials"
+			],
+			[
+				"not",
+				"notObject"
+			],
+			[
+				"Diff",
+				"MapDiffuse"
+			],
+			[
+				"imp",
+				"import"
+			],
+			[
+				"loadM",
+				"loadMaterials"
+			],
+			[
+				"createM",
+				"createMaterial"
+			],
+			[
+				"MTLt",
+				"MTLToken"
+			],
+			[
+				"bui",
+				"buildIndexMapWith"
+			],
+			[
+				"adD",
+				"addLastIndex"
+			],
+			[
+				"MTL",
+				"MTLToken"
+			],
+			[
+				"objec",
+				"objectsOf"
+			],
+			[
+				"lang",
+				"LANGUAGE"
+			],
+			[
+				"sas",
+				"satisfiesAny"
+			],
+			[
+				"render",
+				"renderCentredText"
+			],
+			[
+				"unsafe",
+				"unsafePerformIO"
+			],
+			[
+				"renderB",
+				"renderBodyAndArrow"
+			],
+			[
+				"colo",
+				"Colour"
+			],
+			[
+				"pos",
+				"_position"
+			],
+			[
+				"size",
+				"sizeAsVector"
+			],
+			[
+				"mag",
+				"magnitude"
+			],
+			[
+				"renderC",
+				"renderCurvedPath"
+			],
+			[
+				"Wa",
+				"WaveFront"
+			],
+			[
+				"renderp",
+				"renderPolygon"
+			],
+			[
+				"renderW",
+				"renderWonkyArrowsPointingAtBalls"
+			],
+			[
+				"qualif",
+				"qualified"
+			],
+			[
+				"head",
+				"headWidth"
+			],
+			[
+				"the",
+				"thearrow"
+			],
+			[
+				"renderP",
+				"renderPath"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/blueprints.py",
+			"settings":
+			{
+				"buffer_size": 1781,
+				"line_ending": "Windows",
+				"name": "#"
+			}
+		},
+		{
+			"file": "vector.lua",
+			"settings":
+			{
+				"buffer_size": 35,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "importer.lua",
+			"settings":
+			{
+				"buffer_size": 923,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Jonatan/AppData/Roaming/.minecraft/saves/Computers Galore-/computer/2/print",
+			"settings":
+			{
+				"buffer_size": 1171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "miner.lua",
+			"settings":
+			{
+				"buffer_size": 2417,
+				"line_ending": "Windows",
+				"name": "-- miner.lua"
+			}
+		}
+	],
+	"build_system": "Packages/Lua/Lua.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Haskell/Haskell.sublime-build",
+					""
+				],
+				[
+					"Packages/User/build/HaskellCompileRun.sublime-build",
+					""
+				],
+				[
+					"Packages/User/build/HaskellConsole.sublime-build",
+					""
+				],
+				[
+					"Packages/User/build/HaskellConsole.sublime-build",
+					"GHCi"
+				]
+			],
+			[
+				"Packages/User/build/HaskellCompileRun.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Haskell/Haskell.sublime-build",
+					""
+				],
+				[
+					"Packages/User/build/HaskellConsole.sublime-build",
+					""
+				],
+				[
+					"Packages/User/build/HaskellConsole.sublime-build",
+					"GHCi"
+				]
+			],
+			[
+				"Packages/Haskell/Haskell.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Lua/Lua.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Dev/Lua.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Lua/Lua.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/build/PythonGUI.sublime-build",
+					""
+				],
+				[
+					"Packages/User/build/PythonPrompt.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 197.0,
+		"last_filter": "save as",
+		"selected_items":
+		[
+			[
+				"save as",
+				"Project: Save As"
+			],
+			[
+				"lua",
+				"Set Syntax: Lua"
+			],
+			[
+				"key b",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"syntax javas",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"reverse",
+				"Permute Lines: Reverse"
+			],
+			[
+				"py",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"co",
+				"Git: Commit"
+			],
+			[
+				"ad",
+				"Git: Add..."
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"caba",
+				"Set Syntax: Cabal"
+			],
+			[
+				"hask",
+				"Set Syntax: Haskell"
+			],
+			[
+				"sett",
+				"Preferences: Settings - User"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"has",
+				"Set Syntax: Haskell"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"ghci",
+				"Build With: HaskellConsole - GHCi"
+			],
+			[
+				"a",
+				"Git: Add..."
+			],
+			[
+				"ghc",
+				"Build With: HaskellConsole - GHCi"
+			],
+			[
+				"nex",
+				"SublimeHaskell: Go to next error"
+			],
+			[
+				"ha",
+				"Set Syntax: Haskell"
+			],
+			[
+				"enable p",
+				"Package Control: Enable Package"
+			],
+			[
+				"disable ",
+				"Package Control: Disable Package"
+			],
+			[
+				"ca",
+				"Set Syntax: Cabal"
+			],
+			[
+				"run",
+				"SublimeHaskell: Run"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"log",
+				"Git: Log Current File"
+			],
+			[
+				"git log",
+				"Git: Log All"
+			],
+			[
+				"haske",
+				"Set Syntax: Haskell"
+			],
+			[
+				"haskel",
+				"Set Syntax: Haskell Output Panel"
+			],
+			[
+				"add hca",
+				"Package Control: Add Channel"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"add cha",
+				"Package Control: Add Channel"
+			],
+			[
+				"next er",
+				"SublimeHaskell: Go to next error"
+			],
+			[
+				"next err",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"erro",
+				"SublimeHaskell: Show error panel"
+			],
+			[
+				"show typ",
+				"SublimeHaskell: Show type"
+			],
+			[
+				"remov eboo",
+				"SublimeBookmarks: Remove A Bookmark"
+			],
+			[
+				"bokmakr",
+				"SublimeBookmarks: Goto Bookmark"
+			],
+			[
+				"insert",
+				"SublimeHaskell: Insert import for symbol"
+			],
+			[
+				"imports",
+				"SublimeHaskell: Clear imports"
+			],
+			[
+				"add bo",
+				"SublimeBookmarks: Add Bookmark"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"clean",
+				"SublimeHaskell: Clean"
+			],
+			[
+				"haskell",
+				"SublimeHaskell: Check"
+			],
+			[
+				"",
+				"Build With: HaskellConsole - GHCi"
+			],
+			[
+				"theme",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"show",
+				"SublimeHaskell: Show type"
+			],
+			[
+				"type",
+				"SublimeHaskell: Show type"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"settings",
+				"Preferences: SublimeHaskell Settings – Default"
+			],
+			[
+				"add repos",
+				"Package Control: Add Repository"
+			],
+			[
+				"reposity",
+				"Package Control: Remove Repository"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"show t",
+				"SublimeHaskell: Show type"
+			],
+			[
+				"inser",
+				"SublimeHaskell: Insert type"
+			],
+			[
+				"inst",
+				"SublimeHaskell: Insert type"
+			],
+			[
+				"add f",
+				"Project: Add Folder"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"compile",
+				"Build With: HaskellCompileRun"
+			],
+			[
+				"build",
+				"SublimeHaskell: Build"
+			],
+			[
+				"im",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"compi",
+				"Build With: HaskellCompileRun"
+			],
+			[
+				"comp",
+				"Build With: HaskellCompileRun"
+			],
+			[
+				"git bra",
+				"Git: New Branch"
+			],
+			[
+				"compil",
+				"Build With: HaskellCompileRun"
+			],
+			[
+				"c",
+				"Git: Commit"
+			],
+			[
+				"haskellC",
+				"Build With: HaskellConsole"
+			],
+			[
+				"gh",
+				"Build With: HaskellConsole - GHCi"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"ru",
+				"SublimeHaskell: Run"
+			],
+			[
+				"bui",
+				"SublimeHaskell: Build"
+			],
+			[
+				"sb",
+				"SublimeHaskell: Build"
+			],
+			[
+				"add fo",
+				"Project: Add Folder"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"pro",
+				"Project: Save As"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"jav",
+				"Set Syntax: Java"
+			],
+			[
+				"ryu",
+				"Set Syntax: Ruby"
+			],
+			[
+				"Ru",
+				"Build: Run Java"
+			],
+			[
+				"RU",
+				"Build: Run Java"
+			],
+			[
+				"dif",
+				"Git: Diff Current File"
+			],
+			[
+				"pu",
+				"Git: Push Current Branch"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"o",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"user",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"PY",
+				"Set Syntax: Python"
+			],
+			[
+				"ide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"cl",
+				"Project: Close"
+			],
+			[
+				"clo",
+				"Project: Close"
+			],
+			[
+				"pref",
+				"Preferences: Settings - Default"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"proj",
+				"Project: Close"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"Diff",
+				"Git: Diff Current File"
+			],
+			[
+				"rege",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"impr",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"im	",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"IMPRO",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"impro",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"syntax: py",
+				"Set Syntax: PythonImproved"
+			],
+			[
+				"cust",
+				"Git: Custom Command"
+			],
+			[
+				"git",
+				"Git: Graph All"
+			],
+			[
+				"Co",
+				"Git: Commit"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"cu",
+				"Git: Custom Command"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"di",
+				"Git: Diff Current File"
+			],
+			[
+				"d",
+				"Git: Document Selection"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git b",
+				"Git: Blame"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git ",
+				"Git: Add..."
+			],
+			[
+				"gi",
+				"Git: Push"
+			],
+			[
+				"set syntax:c",
+				"Set Syntax: C"
+			],
+			[
+				"build ",
+				"Build: Build"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 481.0,
+		"history":
+		[
+			"view.run_command(\"insert_special_syml\")",
+			"view.run_command(\"insert_special_symbol\")",
+			"insert_special_symbol",
+			"InsertSpecialSymbol",
+			"view.run_command(\"insert_special_symbol\")",
+			"sublime.status_message(\"Arriving late\")",
+			"set_async_timeout(lambda: sublime.status_message(\"Arriving late\"), 1000)",
+			"sublime.set_async_timeout(lambda: sublime.status_message(\"Arriving late\"), 1000)",
+			"sublime.set_async_timeout(1000, lambda: sublime.status_message(\"Arriving late\"))",
+			"sublime",
+			"sublime.Settings.get(\"\")",
+			"sublime.Settings.get()",
+			"sublime.arch()",
+			"sublime.version()",
+			"print(sublime.get_clipboard())",
+			"sublime.get_clipboard()",
+			"sublime.get_clip_board()",
+			"print(\"\\n\".join(dir(sublime.windows()[0])))",
+			"print(\"\\n\".join(dir(sublime.windows()[0]))",
+			"dir(sublime.windows()[0])",
+			"sublime.windows()[0]",
+			"sublime.windows()",
+			"import sublime",
+			"view.windows()",
+			"windows()",
+			"view.run_command(\"example_command\")",
+			"view.run_command(\"insert_special_symbol\")",
+			"view.run_command(\"example_command\")",
+			"view.run_command(\"insert_special_symbol\")",
+			"name",
+			"view.run_command(\"insert_special_symbol\")",
+			"view.run_command(insert_special_symbol)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Jonatan/Desktop/MC Servers/Forge 1.10/server.properties",
+		"/C/Users/Jonatan/Desktop/MC Servers/Forge 1.10/whitelist.json",
+		"/C/Users/Jonatan/Desktop/MC Servers/Forge 1.10/eula.txt",
+		"/C/Users/Jonatan/AppData/Roaming/.minecraft/saves/Cubes ad infinitum/computer/16/miner",
+		"/C/Users/Jonatan/AppData/Roaming/.minecraft/saves/Cubes ad infinitum/data/Stronghold.dat",
+		"/C/Users/Jonatan/AppData/Roaming/.minecraft/mods/assets/computercraft/models/item/turtle_grey.json",
+		"/C/Users/Jonatan/AppData/Roaming/.minecraft/config/ComputerCraft.cfg",
+		"/C/Users/Jonatan/AppData/Roaming/.minecraft/saves/Computers Galore/stats/93d4a1fd-c6ae-4feb-9ad7-1a4c839c1e2c.json",
+		"/C/Users/Jonatan/Desktop/nativelog.txt",
+		"/C/Users/Jonatan/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/Snake/src/Snake/Foreign/Core.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/Snake/src/Snake/Core.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Interpolate/.gitignore",
+		"/C/Users/Jonatan/AppData/Roaming/.minecraft/crash-reports/crash-2016-08-02_03.59.45-client.txt",
+		"/C/Users/Jonatan/Desktop/Python/startup.py",
+		"/C/Users/Jonatan/Desktop/Python/projects/FlicQuiz/src/sockets.py",
+		"/C/Users/Jonatan/Desktop/Lua/NewtonianConundrums/src/utils/table-mixins.lua",
+		"/C/Users/Jonatan/Desktop/Lua/NewtonianConundrums/assets/fonts/digital_7/readme.txt",
+		"/C/Users/Jonatan/Downloads/Programmering/WifiWebServer.txt",
+		"/C/Users/Jonatan/AppData/Local/Temp/5341.tmp.txt",
+		"/C/Users/Jonatan/Desktop/Python/modules/Interwebs/PeerServer.py",
+		"/C/Users/Jonatan/Desktop/Web dev/assets/fonts/War Thunder.txt",
+		"/C/Users/Jonatan/Desktop/Python/projects/FlicQuiz/watchdog-test.py",
+		"/C/Users/Jonatan/Downloads/Programmering/celshading/Cel Shading/License.txt",
+		"/C/Users/Jonatan/Downloads/Programmering/celshading/Cel Shading/Readme.txt",
+		"/C/Users/Jonatan/Downloads/Python/README.txt",
+		"/C/Users/Jonatan/Desktop/Java/PolyTest/PolyTest/Browser.java",
+		"/C/Users/Jonatan/Desktop/Java/PolyTest/PolyTest/WebViewSample.java",
+		"/C/Users/Jonatan/Desktop/Java/PolyTest/app/elements/elements.html",
+		"/C/Users/Jonatan/Desktop/Java/PolyTest/app/main.html",
+		"/C/Users/Jonatan/Desktop/Java/PolyTest/app/dummy.html",
+		"/C/Users/Jonatan/Desktop/Python/projects/FlicQuiz/assets/ui/dashboard.css",
+		"/C/Users/Jonatan/Desktop/Java/PolyTest/Browser.java",
+		"/C/Users/Jonatan/Desktop/Java/PolyTest/WebViewSample.java",
+		"/C/Users/Jonatan/Desktop/Java/PolyTest/Main.java",
+		"/C/Users/Jonatan/Desktop/Python/projects/FlicQuiz/assets/ui/app/main.html",
+		"/C/Users/Jonatan/Desktop/Web dev/SwiftsNamesake.github.io/sketchpad.html",
+		"/C/Users/Jonatan/Desktop/Python/projects/FlicQuiz/assets/ui/common.css",
+		"/C/Users/Jonatan/Desktop/Python/projects/Scheduler/scheduler.py",
+		"/C/Users/Jonatan/Desktop/Web dev/SwiftsNamesake.github.io/index.html",
+		"/C/Users/Jonatan/Desktop/Python/projects/FlicQuiz/assets/ui/gwd_workspace.json",
+		"/C/Users/Jonatan/Downloads/Programmering/polymer/polymer-starter-kit-light-1.2.3/polymer-starter-kit/app/robots.txt",
+		"/C/Users/Jonatan/Downloads/Programmering/polymer/polymer-starter-kit-light-1.2.3/polymer-starter-kit/app/manifest.json",
+		"/C/Users/Jonatan/Desktop/MC Server/1.9/eula.txt",
+		"/C/Users/Jonatan/Downloads/Programmering/LifeInTheWoodsRenaissanceLauncher/INSTALL.TXT",
+		"/C/Users/Jonatan/Desktop/Databank/Robbers' Note.txt",
+		"/C/Users/Jonatan/Desktop/MC Server/server.properties",
+		"/C/Users/Jonatan/Desktop/MC Server/whitelist.json",
+		"/C/Users/Jonatan/Desktop/MC Server/ops.json",
+		"/C/Users/Jonatan/Desktop/MC Server/eula.txt",
+		"/C/Users/Jonatan/.credentials/client_secret.json",
+		"/C/Users/Jonatan/Desktop/Python/client_secret.json",
+		"/C/Users/Jonatan/.credentials/calendar-python-quickstart.json",
+		"/C/Users/Jonatan/Videos/Black And White 2 + Battle Of The Gods/ReadMe.txt",
+		"/C/Users/Jonatan/Desktop/Web dev/SwiftsNamesake.github.io/First-Person/FirstPerson.html",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/Southpaw.cabal",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Picasso/Shapes.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Picasso/Render.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Picasso/RenderUtils.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Interactive/Application.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Picasso/Palette.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/AbbeyRoad/Capture.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/AbbeyRoad/Play.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Cartesian/Lenses.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Cartesian/Plane/Types.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Cartesian/Plane.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/Camera.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/Transformations.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/Scene.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/WaveFront/Utilities.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/WaveFront/Parsers.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/WaveFront/SampleApp.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/Entity.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/Mesh.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/Shaders.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Cartesian/Space.hs",
+		"/C/Users/Jonatan/Desktop/Java/QMUL/Jon/2015/Feud/assets/animations.json",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/SpriteClip/assets/saves/spritesections.json",
+		"/C/Users/Jonatan/Desktop/Heroku Apps/python-getting-started/requirements.txt",
+		"/C/Users/Jonatan/Desktop/scala-getting-started/Procfile.windows",
+		"/C/Users/Jonatan/Desktop/scala-getting-started/app.json",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/Socratease/src/Main.hs",
+		"/C/Users/Jonatan/Desktop/FreshGTK/FreshGTK.cabal",
+		"/C/Users/Jonatan/Desktop/FreshGTK/LICENSE.md",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack-2015/src/BattleHack/Utilities/Vector.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/SpriteClip/src/SpriteClip/Events.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack-2015/assets/audio/velocity_grand_piano/rkhive.txt",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack-2015/src/Main.hs",
+		"/C/Program Files (x86)/Wolfram Research/Wolfram CDF Player/9.0/SystemFiles/SpellingDictionaries/English/HyphenationPatterns.txt",
+		"/C/Users/Jonatan/Downloads/Programmering/freealut/CMakeLists.txt",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack-2015/BattleHack2015.cabal",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/Load3D/src/main.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack-2015/cabal.config",
+		"/C/Users/Jonatan/AppData/Roaming/stack/snapshots/i386-windows/lts-2.12/7.8.4/pkgdb/prelude-extras-0.4-9d3be608c08d9eb1f5eaa2b3b01d9f44.conf",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack-2015/.stack-work/install/i386-windows/ghc-7.10.0/7.8.3/lib/x86_64-windows-ghc-7.8.3/pango-0.13.1.0/libHSpango-0.13.1.0.a",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack-2015/stack.yaml",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack2015/stack.yaml",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack2015/app/Main.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack2015/src/Lib.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/stack.yaml",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/BattleHack2015/BattleHack2015.cabal",
+		"/C/Users/Jonatan/Downloads/Programmering/Particle/Particle_Windows_Serial_Drivers/README.txt",
+		"/C/eula.3082.txt",
+		"/C/Python34/Lib/distutils/README.txt",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Interactive/Console.hs",
+		"/C/Users/Jonatan/AppData/Roaming/Sublime Text 3/Packages/User/Plain text.sublime-settings",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Cartesian/Cartesian.sublime-project",
+		"/C/Users/Jonatan/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Math/Constants.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Utilities/Utilities.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/WaveFront/Checks.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/WaveFront/Load.hs",
+		"/C/Users/Jonatan/Desktop/Python/projects/Hangman/data/dicts/sv_fysik.txt",
+		"/C/Users/Jonatan/Desktop/3D/models/texturedcube.dae",
+		"/C/Users/Jonatan/Desktop/3D/models/texturedcube.mtl",
+		"/C/Users/Jonatan/Desktop/3D/models/texturedcube.obj",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/README.md",
+		"/C/Users/Jonatan/Desktop/3D/models/gingerbreadhouse.obj",
+		"/C/Users/Jonatan/Desktop/3D/models/gingerbreadhouse.mtl",
+		"/C/Users/Jonatan/Desktop/3D/models/Crate.mtl",
+		"/C/Users/Jonatan/Desktop/Haskell/projects/Copernicus/lib/Copernicus/Hieroglyphs.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/Utils.hs",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/shaders/shader-textured-pixel.glsl",
+		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/shaders/shader-textured-vertex.glsl",
+		"/C/WINDOWS/Fonts/TAHOMA.TTF",
+		"/C/WINDOWS/Fonts/TAHOMABD.TTF",
+		"/C/Users/Jonatan/Desktop/Web dev/SwiftsNamesake.github.io/js/Context3D.js",
+		"/C/Users/Jonatan/Desktop/ALGER.TTF"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"local",
+			"name",
+			"local function miner",
+			"local ",
+			"digAll",
+			"master",
+			"pathPattern",
+			"keys",
+			"new",
+			"right",
+			"r",
+			"miner.forward",
+			"rangemethods",
+			"functions",
+			"Helper",
+			"function",
+			"left",
+			"Auxiliary",
+			"layers",
+			"    ",
+			"frames",
+			"verticalBorders",
+			"Upper",
+			"dx",
+			"pixels",
+			"computer",
+			"comp",
+			"thewords",
+			"wordWith",
+			">> whitespace >> Parsec.word >>= return .",
+			"Parsec.many1 (whitespace >> Parsec.word) >>= return .",
+			"--",
+			"  --",
+			"coordinates",
+			"coordinate",
+			"Parsec.count 3 (whitespace >> floating) >>= return . ",
+			"Parsec.",
+			"Parsec",
+			"qualified",
+			"Parsec",
+			"--",
+			"  --",
+			"enum",
+			".",
+			"File",
+			"\\",
+			"javatest",
+			"JavaTest",
+			"app/",
+			"app",
+			"From",
+			"    \n",
+			"Dolphin",
+			"header",
+			"VM1561:2 ",
+			"alut",
+			"\\w\\w",
+			"a",
+			"GraphicsRenderingPangoStructs",
+			".",
+			"imageSurfaceSize",
+			"flatten",
+			"lift",
+			"liftIO $ liftM fromIntegral",
+			">=",
+			"Cairo.",
+			"lift ",
+			"lift",
+			"Complex ",
+			"Cairo.",
+			"surface",
+			"op",
+			"path",
+			"paths",
+			"chooseModelsFrom",
+			"loadmode",
+			"ask",
+			"---------------------------------------------------------------------------------------------------",
+			"bottom",
+			"top",
+			"left",
+			"top",
+			"newside",
+			"x",
+			"right",
+			"newsize",
+			"o",
+			"new",
+			"left",
+			"makeBoundingBoxLens",
+			"newright",
+			"left",
+			"f -> f",
+			"boundingBoxFromCorners",
+			"BoundingBox",
+			"Section",
+			"yellowgreen",
+			"Transaction",
+			"moveTo",
+			"crosshairs",
+			"text",
+			"anchorpoint",
+			"centre",
+			"anchor",
+			"size",
+			"anchoredRectangle",
+			"omd",
+			"onmousedown",
+			"worldref",
+			"onbuttonpress",
+			" window `on`",
+			"canvas",
+			"size",
+			"centre",
+			"rectangle",
+			"malkeapp",
+			"roundedRect",
+			"render",
+			"arrow",
+			"Section",
+			":: ",
+			"vectorise",
+			"C.",
+			"c.",
+			"C.",
+			"c.",
+			"C.",
+			"c."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"1.0)",
+			"Num f => Colour f",
+			"",
+			"lamda",
+			"=",
+			"amp",
+			"'",
+			"/",
+			"'\\1:', \\1,",
+			"delta",
+			"'",
+			"\\n\\t\\t\\t\\t\\tsnow[i]",
+			"\\n\\t\\tvar",
+			"\\t\\t\\nvar",
+			"\\r\\nvar",
+			"lambda",
+			"print \\(\\1\\)\\n",
+			"print \\(\\1\\)",
+			"print \\(\\0\\)",
+			"/",
+			" "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/blueprints.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1781,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1307,
+								1307
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 600.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "vector.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "importer.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								487,
+								487
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Users/Jonatan/AppData/Roaming/.minecraft/saves/Computers Galore-/computer/2/print",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "miner.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1812,
+								1812
+							]
+						],
+						"settings":
+						{
+							"auto_name": "-- miner.lua",
+							"syntax": "Packages/Lua/Lua.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2059.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 521.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 268.0
+	},
+	"output.haskell_error_checker":
+	{
+		"height": 192.0
+	},
+	"output.haskell_sublime_load":
+	{
+		"height": 130.0
+	},
+	"pinned_build_system": "",
+	"project": "print.lua",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"par",
+				"src\\Graphics\\WaveFront\\Parsers.hs"
+			],
+			[
+				"yaml",
+				"stack.yaml"
+			],
+			[
+				"bro",
+				"C:\\Users\\Jonatan\\Desktop\\Java\\PolyTest\\Browser.java"
+			],
+			[
+				"sam",
+				"Southpaw\\WaveFront\\SampleApp.hs"
+			],
+			[
+				"pla",
+				"Southpaw\\Cartesian\\Plane.hs"
+			],
+			[
+				"samp",
+				"Southpaw\\WaveFront\\SampleApp.hs"
+			],
+			[
+				"projec",
+				"Southpaw\\Cartesian\\Cartesian.sublime-project"
+			],
+			[
+				"same",
+				"Southpaw\\WaveFront\\SampleApp.hs"
+			],
+			[
+				"co",
+				"Southpaw\\Interactive\\Console.hs"
+			],
+			[
+				"cabal",
+				"C:\\Users\\Jonatan\\Desktop\\Haskell\\modules\\Southpaw\\Southpaw.cabal"
+			],
+			[
+				"a",
+				"Southpaw\\Interactive\\Application.hs"
+			],
+			[
+				"plane",
+				"Southpaw\\Cartesian\\Plane.hs"
+			],
+			[
+				"render",
+				"Southpaw\\Picasso\\Render.hs"
+			],
+			[
+				"pale",
+				"Southpaw\\Picasso\\Palette.hs"
+			],
+			[
+				"ren",
+				"Southpaw\\Picasso\\Render.hs"
+			],
+			[
+				"cart",
+				"Southpaw\\Cartesian\\Plane.hs"
+			],
+			[
+				"app",
+				"Southpaw\\Interactive\\Application.hs"
+			],
+			[
+				"apl",
+				"Southpaw\\AbbeyRoad\\Play.hs"
+			],
+			[
+				"rend",
+				"Southpaw\\Picasso\\Render.hs"
+			],
+			[
+				"ap",
+				"Southpaw\\Interactive\\Application.hs"
+			],
+			[
+				"caba",
+				"C:\\Users\\Jonatan\\Desktop\\Haskell\\modules\\Southpaw\\Southpaw.cabal"
+			],
+			[
+				"pal",
+				"Southpaw\\Picasso\\Palette.hs"
+			],
+			[
+				"carte",
+				"Southpaw\\Cartesian\\Plane.hs"
+			],
+			[
+				"uti/uti",
+				"Southpaw\\Utilities\\Utilities.hs"
+			],
+			[
+				"chec",
+				"Southpaw\\WaveFront\\Checks.hs"
+			],
+			[
+				"load",
+				"Southpaw\\WaveFront\\Load.hs"
+			],
+			[
+				"wave",
+				"Southpaw\\WaveFront\\Parsers.hs"
+			],
+			[
+				"checks",
+				"Southpaw\\WaveFront\\Checks.hs"
+			],
+			[
+				"util",
+				"Southpaw\\Utilities\\Utilities.hs"
+			],
+			[
+				"uti",
+				"Southpaw\\WaveFront\\Utilities.hs"
+			],
+			[
+				"wavefront/u",
+				"Southpaw\\WaveFront\\Utilities.hs"
+			],
+			[
+				"pa",
+				"Southpaw\\WaveFront\\Parsers.hs"
+			],
+			[
+				"mes",
+				"Southpaw\\Michelangelo\\Mesh.hs"
+			],
+			[
+				"pars",
+				"Southpaw\\WaveFront\\Parsers.hs"
+			],
+			[
+				"pi",
+				"Southpaw\\WaveFront\\shader-pixel.glsl"
+			],
+			[
+				"shader",
+				"Southpaw\\WaveFront\\shader-vertex.glsl"
+			],
+			[
+				"readme",
+				"Southpaw\\README.md"
+			],
+			[
+				"s",
+				"Southpaw\\Michelangelo\\Shaders.hs"
+			],
+			[
+				"fore",
+				"Southpaw\\WaveFront\\Foreign.hs"
+			],
+			[
+				"utils",
+				"Southpaw\\Michelangelo\\Utils.hs"
+			],
+			[
+				"format",
+				"Southpaw\\Utilities\\Format.hs"
+			],
+			[
+				"cap",
+				"Southpaw\\AbbeyRoad\\Capture.hs"
+			],
+			[
+				"lo",
+				"Southpaw\\WaveFront\\Load.hs"
+			],
+			[
+				"che",
+				"Southpaw\\WaveFront\\Checks.hs"
+			],
+			[
+				"sa",
+				"Southpaw\\WaveFront\\SampleApp.hs"
+			],
+			[
+				"appl",
+				"Southpaw\\Interactive\\Application.hs"
+			],
+			[
+				"p",
+				"Southpaw\\WaveFront\\Parsers.hs"
+			],
+			[
+				"check",
+				"Southpaw\\WaveFront\\Checks.hs"
+			],
+			[
+				"un",
+				"Southpaw\\Unicode\\WinUnicodeConIO.hs"
+			],
+			[
+				"wa",
+				"Southpaw\\WaveFront\\Wavefront.hs"
+			],
+			[
+				"ut",
+				"Southpaw\\Utilities\\Utilities.hs"
+			],
+			[
+				"uni",
+				"Southpaw\\Unicode\\WinUnicodeConIO.hs"
+			],
+			[
+				"g",
+				"Cartesian\\.gitignore"
+			],
+			[
+				"unic",
+				"Unicode\\WinUnicodeConIO.hs"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"ca",
+				"Copernicus.cabal"
+			],
+			[
+				"hi",
+				"Hieroglyphs.hs"
+			],
+			[
+				"cop",
+				"Copernicus.hs"
+			],
+			[
+				"c",
+				"Copernicus.cabal"
+			],
+			[
+				"h",
+				"Hieroglyphs.hs"
+			],
+			[
+				"col",
+				"colours.txt"
+			],
+			[
+				"m",
+				"main.hs"
+			],
+			[
+				"",
+				"C:\\Users\\Jonatan\\Desktop\\Haskell\\projects\\Hanoi\\main.hs"
+			],
+			[
+				"java",
+				"JavaC.sublime-build"
+			],
+			[
+				"i",
+				"InsertSpecialSymbol.py"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"data",
+				"data\\dicts\\dictionaries.json"
+			],
+			[
+				"re",
+				"README.md"
+			],
+			[
+				"htm",
+				"FirstPerson.html"
+			],
+			[
+				"ind",
+				"C:\\Users\\Jonatan\\Desktop\\Hemsida\\index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"coper",
+				"C:\\Users\\Jonatan\\Desktop\\Haskell\\projects\\Copernicus\\Copernicus.sublime-project"
+			],
+			[
+				"",
+				"C:\\Users\\Jonatan\\Desktop\\Haskell\\projects\\Copernicus\\Copernicus.sublime-project"
+			],
+			[
+				"ins",
+				"C:\\Users\\Jonatan\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\ST3Extensions.sublime-project"
+			],
+			[
+				"newt",
+				"C:\\Users\\Jonatan\\Desktop\\Python\\projects\\Newtonian\\Newtonian.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
