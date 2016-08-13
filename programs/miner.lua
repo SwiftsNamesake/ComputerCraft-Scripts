@@ -6,13 +6,13 @@ local vec = vector
 
 
 -- General helpers
-local Range = {}
+local Range = { meta={} }
 
 
 local function range(fr,to)
   local r = {}
   for i=fr,to do r[#r+1] = i end
-  setmetatable(r, Range)
+  setmetatable(r, Range.meta)
   return r
 end
 
@@ -23,26 +23,31 @@ end
 -- end
 
 
+function Range.meta.__index(r, key)
+  return Range.methods[key]
+end
+
+
 function Range.lift(r)
-  setmetatable(r, Range)
+  setmetatable(r, Range.meta)
   return r
 end
 
 
-function Range.map(r, f)
+function Range.methods.map(r, f)
   new = {}
   for i=1, #r do new[i] = f(r[i]) end
-  setmetatable(new, Range)
+  setmetatable(new, Range.meta)
   return new
 end
 
 
-function Range.filter(r, p)
+function Range.methods.filter(r, p)
   local new = {}
   for i=1,#r do
   	if p(r[i]) then new[#new+1] = r[i] end
   end
-  setmetatable(new, Range)
+  setmetatable(new, Range.meta)
   return r
 end
 
