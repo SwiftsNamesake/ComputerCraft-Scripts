@@ -30,3 +30,6 @@ function Navigator.methods.back(self)    self.pos = self.pos - self.facing      
 
 function Navigator.methods.left(self)    self.facing = self.facing:rotateY(-1) turtle.up() end
 function Navigator.methods.right(self)   self.facing = self.facing:rotateY( 1) turtle.up() end
+
+function Navigator.methods.strafeLeft(self) self:left()  self:forward() self:right() end
+function Navigator.methods.strafeLeft(self) self:right() self:forward() self:left()  end

@@ -1,6 +1,6 @@
 -- Integer vectors
 -- vector.lua
-print('Hello world!')
+-- TODO: Scalar operations
 
 
 --
