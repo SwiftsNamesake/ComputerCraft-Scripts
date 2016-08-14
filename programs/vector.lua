@@ -35,6 +35,11 @@ function Vector.meta.__index(v, key)
 end
 
 
+-- function Vector.meta.__hash(v)
+--   print('hashing...')
+-- end
+
+
 -- Strings
 function Vector.meta.__tostring(v)
   return ('Vector(x=%.02f, y=%.02f, z=%.02f)'):format(v.x, v.y, v.z)
@@ -68,7 +73,42 @@ end
 -- end
 
 
+-- Other methods
+function Vector.ops.rotateY(v, quarters)
+  -- Rotate the vector clockwise about the Y-axis
+  -- TODO: FINISH THIS
+  local radians = -quarters/4 * 2*math.pi + math.pi/2 -- TODO: Simplify
+  local size    = v:abs().x
+  -- print(size, radians, math.cos(radians), math.sin(radians))
+  return new(math.floor(size*math.cos(radians) + 0.5), 0, math.floor(size*math.sin(radians) + 0.5))
+end
+
+
 -- Comparison
 function Vector.meta.__eq(v, other)
   return (v.x == other.x) and (v.y == other.y) and (v.z == other.z)
 end
+
+
+--
+-- TODO: Find out what coordinate system Minecraft uses
+cardinals = { north = new( 0, 0,  1)
+              south = new( 0, 0, -1)
+              east  = new( 1, 0,  0)
+              west  = new(-1, 0,  0)}
+
+-- local cardinals = { [new( 0, 0,  1)] = 'north', [new( 0, 0, -1)] = 'south', [new( 1, 0,  0)] = 'east', [new(-1, 0,  0)] = 'west'}
+function checks()
+  print(north == north)
+  print(north:rotateY(1) == east)
+  print(north:rotateY(2) == south)
+  print(north:rotateY(3) == west)
+  print(north:rotateY(4) == north)
+  print(north:rotateY(5) == east)
+  print(north:rotateY(6) == south)
+
+  print(north:rotateY(2) == south)
+end
+
+
+checks()
