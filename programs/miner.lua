@@ -13,10 +13,6 @@ local vec = vector
 -- General helpers
 
 -- Navigation helpers
--- local bearings = { pos    = vec(0, 0, 0),
---                    facing = vec(0, 0, 1),
---                    home   = vec(0, 0,0 )}
-
 
 -- Mining helpers
 local miner = {}
@@ -29,41 +25,9 @@ function miner.digAll()
 end
 
 
-function miner.move(v) end
-
-
-function miner.left()
-
-end
-
-
-function miner.right()
-
-end
-
-
-function miner.up()
-
-end
-
-
-function miner.down()
-
-end
-
-
-function miner.forward()
-
-end
-
-
-
-function miner.back()
-
-end
-
 
 function miner.refuel()
+  -- TODO: Move to navigation (?)
   range(1,16):map(function (n)
     turtle.select(n)
   end)
@@ -71,7 +35,7 @@ end
 
 
 function miner.unload()
-
+  -- TODO: Move to navigation (?)
 end
 
 

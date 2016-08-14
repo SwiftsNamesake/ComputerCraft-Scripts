@@ -3,6 +3,12 @@ os.loadAPI('utils/range')
 
 
 --
+function summary()
+
+end
+
+
+--
 function find(block)
   -- Finds the first slot which has the given block
   -- TODO: Block data
