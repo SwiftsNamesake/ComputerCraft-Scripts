@@ -1,63 +1,21 @@
 -- miner.lua
 
--- os.loadAPI('vector') --
+
+-- We'll need these
+os.loadAPI('utils/vector') --
+os.loadAPI('utils/navigation')
+os.loadAPI('utils/inventory')
+os.loadAPI('utils/range')
 
 local vec = vector
 
 
 -- General helpers
-local Range = { meta={} }
-
-
-local function range(fr,to)
-  local r = {}
-  for i=fr,to do r[#r+1] = i end
-  setmetatable(r, Range.meta)
-  return r
-end
-
-
-
--- function Range.__tostring(r)
---   local s = ''
--- end
-
-
-function Range.meta.__index(r, key)
-  return Range.methods[key]
-end
-
-
-function Range.lift(r)
-  setmetatable(r, Range.meta)
-  return r
-end
-
-
-function Range.methods.map(r, f)
-  new = {}
-  for i=1, #r do new[i] = f(r[i]) end
-  setmetatable(new, Range.meta)
-  return new
-end
-
-
-function Range.methods.filter(r, p)
-  local new = {}
-  for i=1,#r do
-  	if p(r[i]) then new[#new+1] = r[i] end
-  end
-  setmetatable(new, Range.meta)
-  return r
-end
-
 
 -- Navigation helpers
 -- local bearings = { pos    = vec(0, 0, 0),
---                    facing = vec(0, 0, 1)}
-
--- Inventory helpers
-local inventory = {}
+--                    facing = vec(0, 0, 1),
+--                    home   = vec(0, 0,0 )}
 
 
 -- Mining helpers
@@ -106,7 +64,7 @@ end
 
 
 function miner.refuel()
-  range(1,9):map(function (n)
+  range(1,16):map(function (n)
     turtle.select(n)
   end)
 end

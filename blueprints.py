@@ -16,7 +16,20 @@ def main():
 
 	'''
 
-	Blueprint.load('C:/Users/Jonatan/Pictures/Minecraft blueprints/mobgrinder.png')
+	bp = Blueprint.load('C:/Users/Jonatan/Pictures/Minecraft blueprints/mobgrinder.png', {
+			(255, 255, 255): ' ',                       # Air
+			(191,  16, 250): 'minecraft:stonebrick',    # Exterior walls
+			(130,  52,   0): 'minecraft:redstone_lamp', # Redstone lamps
+			(255, 127,  39): 'minecraft:stone',         # Floors and pedestals
+			(237,  28,  36): 'minecraft:redstone',      # Redstone
+			(153, 217, 234): 'minecraft:water',         # Water
+			( 34, 177,  76): 'minecraft:wooden_slab',   # Half slabs
+			(185, 122,  87): 'minecraft:dirt'           # Floor access
+			# (255, 127,  39): '?' # 
+	})
+
+	bp.save('mobgrinder', 'blueprints/mobgrinder.lua')
+	# print(bp.toLuaArray())
 
 
 
@@ -26,24 +39,44 @@ class Blueprint(object):
 	Docstring goes here
 
 	'''
+	
+	def __init__(self, layers, blockmap):
+		self.layers   = layers
+		self.blockmap = blockmap
 
-	def __init__(self):
-		pass
 
+	def toLuaArray(self):
+		# return '{{{}}}'.format()
+		# print(self.layers[0])
+		# for block in self.layers[0]: print(block)
+		# return '{{{0}}}'.format(', '.join('{0}\'{1}\''.format(' '*(24 - len(block)), block) for block in self.layers[0][0]))
+		# return ['{{{}}}'.format(', '.join('\'{0}\''.format(block) for block in layer)) for layer in self.layers][0]
+		return '{{{}}}'.format(',\n'.join(['{{{}}}'.format(', '.join('{0}\'{1}\''.format(' '*(24 - len(block)), block) for block in layer)) for layer in self.layers[0]]))
+
+
+	def save(self, name, fn):
+		with open(fn, mode='w', encoding='utf-8') as f:
+			f.write('{0} = {1}'.format(name, self.toLuaArray()))
+
+
+	# @staticmethod
+	# def toLuaArray(items):
+	# 	pass
 
 
 	@staticmethod
-	def load(fn):
+	def load(fn, blockmap):
 
 		'''
 		Docstring goes here
 
 		'''
 
-		image  = Image.open(fn) #
-		pixels = image.load()   #
-		dx, dy = image.size
-		print(image, dx, dy)
+		# TODO: Refactor
+
+		im     = Image.open(fn) #
+		pixels = im.load()   #
+		dx, dy = im.size
 
 		framecolour = (0, 0, 0) # The colour of the frames around each vertical layer
 
@@ -51,38 +84,21 @@ class Blueprint(object):
 		assert all(pixels[x, dy-1] == framecolour for x in range(dx)), 'Blueprint must have valid layer borders' # Lower border
 
 		verticalBorders = [x for x in range(dx) if pixels[x, 1] == framecolour] #
-		print(verticalBorders)
 		assert verticalBorders == [x for x in range(0, dx, verticalBorders[1]-verticalBorders[0])], 'All layers must be the same size' #
 
 		framesize = (verticalBorders[1]-verticalBorders[0], dy)
 
 		layers = []
 
-		blockmap = {
-			(255, 255, 255): ' ', # Air
-			(191,  16, 250): 'W', # ?
-			(255, 127,  39): 'b', # ?
-			(130,  52,   0): 'c', # ?
-			(255, 127,  39): 'e', # ?
-			(237,  28,  36): 'f', # ?
-			(153, 217, 234): 'g', # ?
-			( 34, 177,  76): 'h', # ?
-			(185, 122,  87): 'i'  # ?
-		}
-
 		for layer in verticalBorders[:-1]:
-			print(layer)
 			layers.append([[blockmap[pixels[x+layer,y]] for x in range(1, framesize[0]-1)] for y in range(1, framesize[1]-1)])
 
-		for l in layers:
-			print(showLayer(l))
+		return Blueprint(layers, blockmap)
 
 
 def showLayer(layer):
 	return '\n'.join(''.join(row) for row in layer)
 
-def toLuaArray(layer):
-	pass
 
 if __name__ == '__main__':
 	main()

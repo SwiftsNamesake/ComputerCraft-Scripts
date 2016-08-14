@@ -519,48 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/blueprints.py",
-			"settings":
-			{
-				"buffer_size": 1781,
-				"line_ending": "Windows",
-				"name": "#"
-			}
-		},
-		{
-			"file": "vector.lua",
-			"settings":
-			{
-				"buffer_size": 35,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "importer.lua",
-			"settings":
-			{
-				"buffer_size": 923,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Jonatan/AppData/Roaming/.minecraft/saves/Computers Galore-/computer/2/print",
-			"settings":
-			{
-				"buffer_size": 1171,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "miner.lua",
-			"settings":
-			{
-				"buffer_size": 2417,
-				"line_ending": "Windows",
-				"name": "-- miner.lua"
-			}
-		}
 	],
 	"build_system": "Packages/Lua/Lua.sublime-build",
 	"build_system_choices":
@@ -653,10 +611,30 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 197.0,
-		"last_filter": "save as",
+		"height": 59.0,
+		"last_filter": "add fo",
 		"selected_items":
 		[
+			[
+				"add fo",
+				"Project: Add Folder"
+			],
+			[
+				"sidebar",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Convert to Tabs"
+			],
 			[
 				"save as",
 				"Project: Save As"
@@ -978,10 +956,6 @@
 				"SublimeHaskell: Build"
 			],
 			[
-				"add fo",
-				"Project: Add Folder"
-			],
-			[
 				"status",
 				"Git: Status"
 			],
@@ -1026,10 +1000,6 @@
 				"Git: Push Current Branch"
 			],
 			[
-				"inde",
-				"Indentation: Reindent Lines"
-			],
-			[
 				"o",
 				"View: Toggle Open Files in Side Bar"
 			],
@@ -1064,10 +1034,6 @@
 			[
 				"key",
 				"Preferences: Key Bindings - Default"
-			],
-			[
-				"project",
-				"Project: Save As"
 			],
 			[
 				"proj",
@@ -1160,14 +1126,6 @@
 			[
 				"gi",
 				"Git: Push"
-			],
-			[
-				"set syntax:c",
-				"Set Syntax: C"
-			],
-			[
-				"build ",
-				"Build: Build"
 			]
 		],
 		"width": 464.0
@@ -1223,6 +1181,14 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/programs/miner.lua",
+		"/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/programs/importer.lua",
+		"/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/programs/vector.lua",
+		"/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/programs/str.lua",
+		"/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/blueprints.py",
+		"/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/programs/print.lua",
+		"/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/blueprints/mobgrinder.lua",
+		"/C/Users/Jonatan/AppData/Roaming/.minecraft/saves/Computers Galore-/computer/2/print",
 		"/C/Users/Jonatan/Desktop/MC Servers/Forge 1.10/server.properties",
 		"/C/Users/Jonatan/Desktop/MC Servers/Forge 1.10/whitelist.json",
 		"/C/Users/Jonatan/Desktop/MC Servers/Forge 1.10/eula.txt",
@@ -1342,15 +1308,7 @@
 		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/README.md",
 		"/C/Users/Jonatan/Desktop/3D/models/gingerbreadhouse.obj",
 		"/C/Users/Jonatan/Desktop/3D/models/gingerbreadhouse.mtl",
-		"/C/Users/Jonatan/Desktop/3D/models/Crate.mtl",
-		"/C/Users/Jonatan/Desktop/Haskell/projects/Copernicus/lib/Copernicus/Hieroglyphs.hs",
-		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/Utils.hs",
-		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/shaders/shader-textured-pixel.glsl",
-		"/C/Users/Jonatan/Desktop/Haskell/modules/Southpaw/lib/Southpaw/Michelangelo/shaders/shader-textured-vertex.glsl",
-		"/C/WINDOWS/Fonts/TAHOMA.TTF",
-		"/C/WINDOWS/Fonts/TAHOMABD.TTF",
-		"/C/Users/Jonatan/Desktop/Web dev/SwiftsNamesake.github.io/js/Context3D.js",
-		"/C/Users/Jonatan/Desktop/ALGER.TTF"
+		"/C/Users/Jonatan/Desktop/3D/models/Crate.mtl"
 	],
 	"find":
 	{
@@ -1369,6 +1327,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-",
+			"inventory",
+			"{",
+			"block",
+			"image",
+			"tolua",
+			"blockmap",
+			"(",
+			"bl",
+			"fsn",
+			"#",
+			"' ', #",
+			"' ', # ",
+			"' ',#",
+			"):",
+			":",
+			"#",
+			"setmetatable(r, Range)",
+			"self",
+			"vec_mt",
+			"+",
+			"__add",
+			"x",
+			"[3]",
+			"[2]",
+			"[1]",
+			"en",
+			"	",
+			"other",
+			"1",
+			"abs",
 			"local",
 			"name",
 			"local function miner",
@@ -1465,38 +1454,7 @@
 			"boundingBoxFromCorners",
 			"BoundingBox",
 			"Section",
-			"yellowgreen",
-			"Transaction",
-			"moveTo",
-			"crosshairs",
-			"text",
-			"anchorpoint",
-			"centre",
-			"anchor",
-			"size",
-			"anchoredRectangle",
-			"omd",
-			"onmousedown",
-			"worldref",
-			"onbuttonpress",
-			" window `on`",
-			"canvas",
-			"size",
-			"centre",
-			"rectangle",
-			"malkeapp",
-			"roundedRect",
-			"render",
-			"arrow",
-			"Section",
-			":: ",
-			"vectorise",
-			"C.",
-			"c.",
-			"C.",
-			"c.",
-			"C.",
-			"c."
+			"yellowgreen"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1535,153 +1493,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/Users/Jonatan/Desktop/Lua/ComputerCraft Scripts/blueprints.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1781,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1307,
-								1307
-							]
-						],
-						"settings":
-						{
-							"auto_name": "#",
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 600.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "vector.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 35,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								35,
-								35
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "importer.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 923,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								487,
-								487
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Lua/Lua.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/C/Users/Jonatan/AppData/Roaming/.minecraft/saves/Computers Galore-/computer/2/print",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1171,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								180,
-								180
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "miner.lua",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2417,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1812,
-								1812
-							]
-						],
-						"settings":
-						{
-							"auto_name": "-- miner.lua",
-							"syntax": "Packages/Lua/Lua.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2059.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -2071,9 +1884,9 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 209.0,
 	"status_bar_visible": true,
 	"template_settings":
