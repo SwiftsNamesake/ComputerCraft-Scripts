@@ -47,7 +47,7 @@ function Navigator.methods.detectDown(nav)    return nav:detect('down')    end
 
 
 -- Advanced movement
-function Navigation.methods.area(nav, dx, dz, f)
+function Navigator.methods.area(nav, dx, dz, f)
   --
   -- TODO: Options (eg. turn-right-first or turn-left-first)
   -- TODO: Smarter callbacks (eg. on-turn, on-new-row, etc.)
