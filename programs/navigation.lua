@@ -36,14 +36,20 @@ function Navigator.methods.right(self) self.facing = self.facing:rotateY( 1) tur
 function Navigator.methods.detect(nav, direction)
 	-- TODO: Allow block to be air (eg. check nil)
 	-- TODO: Allow any direction
-  local b = ({ up = turtle.detectUp, down = turtle.detectDown, forward = turtle.detect })()
-  return (b == nil) and { name='air' } or b
+  return ({ up = turtle.detectUp, down = turtle.detectDown, forward = turtle.detect })[direction]()
 end
 
 
 function Navigator.methods.detectForward(nav) return nav:detect('forward') end
 function Navigator.methods.detectUp(nav)      return nav:detect('up')      end
 function Navigator.methods.detectDown(nav)    return nav:detect('down')    end
+
+
+function Navigator.methods.inspect(nav, direction)
+	-- TODO: Allow any direction
+  local b = ({ up = turtle.detectUp, down = turtle.detectDown, forward = turtle.detect })[direction]()
+  return (b == nil) and { name='air' } or b
+end
 
 
 -- Advanced movement
