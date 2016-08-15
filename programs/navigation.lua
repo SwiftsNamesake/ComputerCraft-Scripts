@@ -49,6 +49,7 @@ function Navigator.methods.inspect(nav, direction)
 	-- TODO: Allow any direction
 	local fs = { up = turtle.inspectUp, down = turtle.inspectDown, forward = turtle.inspect }
   local success, b = fs[direction]()
+  print(success, b)
   return success and b or { name='air' }
 end
 
