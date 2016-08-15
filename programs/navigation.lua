@@ -47,8 +47,9 @@ function Navigator.methods.detectDown(nav)    return nav:detect('down')    end
 
 function Navigator.methods.inspect(nav, direction)
 	-- TODO: Allow any direction
-  local b = ({ up = turtle.inspectUp, down = turtle.inspectDown, forward = turtle.inspect })[direction]()
-  return (b == nil) and { name='air' } or b
+	local fs = { up = turtle.inspectUp, down = turtle.inspectDown, forward = turtle.inspect }
+  local success, b = fs[direction]()
+  return success and b or { name='air' }
 end
 
 
