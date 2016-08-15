@@ -4,7 +4,7 @@ os.loadAPI('utils/range')
 
 --
 function summary()
-
+  return {}
 end
 
 
@@ -12,13 +12,19 @@ end
 function find(block)
   -- Finds the first slot which has the given block
   -- TODO: Block data
-  Range(1..16):find(function(i) details(i).name == block end)
+  range.range(1,16):findWith(function(i) return hasBlock(i, block) end)
 end
 
 
 function details(slot)
   -- Gives the details of the blocks in the given slot
   return turtle.getItemDetail(slot) 
+end
+
+
+function hasBlock(slot, block)
+	local d = details(slot)
+  return (d ~= nil) and (d.name == block)
 end
 
 
@@ -32,5 +38,5 @@ end
 
 
 function fuelSlots()
-  return range(1,16):filter(isFuel)
+  return range.range(1,16):filter(isFuel)
 end

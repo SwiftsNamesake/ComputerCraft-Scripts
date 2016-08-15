@@ -2,10 +2,13 @@
 
 
 -- We'll need these
-os.loadAPI('utils/vector') --
-os.loadAPI('utils/navigation')
-os.loadAPI('utils/inventory')
-os.loadAPI('utils/range')
+if turtle then
+  os.loadAPI('utils/vector') --
+  os.loadAPI('utils/navigation')
+  os.loadAPI('utils/inventory')
+  os.loadAPI('utils/range')
+end
+
 
 local vec = vector
 
@@ -28,6 +31,8 @@ end
 
 function miner.refuel()
   -- TODO: Move to navigation (?)
+  -- TODO: FINISH
+  print('ATTEMTPING TO CALL UNIMPLEMENTED FUNCTION miner.refuel')
   range(1,16):map(function (n)
     turtle.select(n)
   end)
@@ -36,6 +41,8 @@ end
 
 function miner.unload()
   -- TODO: Move to navigation (?)
+  -- TODO: IMPLEMENT
+  print('ATTEMTPING TO CALL UNIMPLEMENTED FUNCTION miner.unload')
 end
 
 
@@ -55,7 +62,8 @@ end
 
 
 --
-function excavateThree(dx, dz, rightWhen)
+-- function excavateThree(nav, dx, dz, rightWhen)
+function excavateThree(nav, dx, dz)
   -- Excavate three vertical layers.
   -- 
   -- The X, Y and Z axes are defined relative to the turtle's original position;
@@ -64,6 +72,17 @@ function excavateThree(dx, dz, rightWhen)
   -- TODO: Rename 'rightWhen' param (or maybe use sign of the 'dx' and 'dy' parameters to determine direction) (?)
   
   miner.descend()
+
+  area(nav, dx, dz, function(nav, x, y, z, where)
+    
+    if where == '' then
+      miner.digAll()
+    elseif where == 'last'
+      miner.digUp()
+      miner.digDown()
+    end
+
+  end)
 
   for x=1,dx do
     for z=1,dz-1 do

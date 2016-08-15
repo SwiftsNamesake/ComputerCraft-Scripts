@@ -6,8 +6,8 @@
 
 local path = 'https://raw.githubusercontent.com/%s/%s/%s/%s'
 local settings = { username   = 'swiftsnamesake',
-	               branch     = 'master',
-	               repository = 'computercraft-scripts' }
+	                 branch     = 'master',
+	                 repository = 'computercraft-scripts' }
 
 
 

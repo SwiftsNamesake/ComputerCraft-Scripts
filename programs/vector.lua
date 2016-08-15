@@ -92,9 +92,9 @@ end
 
 --
 -- TODO: Find out what coordinate system Minecraft uses
-cardinals = { north = new( 0, 0,  1)
-              south = new( 0, 0, -1)
-              east  = new( 1, 0,  0)
+cardinals = { north = new( 0, 0,  1),
+              south = new( 0, 0, -1),
+              east  = new( 1, 0,  0),
               west  = new(-1, 0,  0)}
 
 -- local cardinals = { [new( 0, 0,  1)] = 'north', [new( 0, 0, -1)] = 'south', [new( 1, 0,  0)] = 'east', [new(-1, 0,  0)] = 'west'}
