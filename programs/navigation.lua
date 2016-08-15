@@ -27,8 +27,8 @@ function Navigator.methods.strafeLeft(self) self:left()  self:forward() self:rig
 function Navigator.methods.strafeRight(self) self:right() self:forward() self:left()  end
 
 -- Turn
-function Navigator.methods.left(self)  self.facing = self.facing:rotateY(-1) turtle.left()  end
-function Navigator.methods.right(self) self.facing = self.facing:rotateY( 1) turtle.right() end
+function Navigator.methods.left(self)  self.facing = self.facing:rotateY(-1) turtle.turnLeft()  end
+function Navigator.methods.right(self) self.facing = self.facing:rotateY( 1) turtle.turnRight() end
 
 -- function Navigator.methods.look(self, v) end
 
