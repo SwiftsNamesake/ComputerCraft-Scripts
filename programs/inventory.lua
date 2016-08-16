@@ -18,7 +18,7 @@ end
 
 function details(slot)
   -- Gives the details of the blocks in the given slot
-  return turtle.getItemDetail(slot) 
+  return turtle.getItemDetail(slot)
 end
 
 

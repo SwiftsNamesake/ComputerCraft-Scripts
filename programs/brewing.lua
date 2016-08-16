@@ -11,5 +11,6 @@ local graph = { water_botte    = { nether_wart = { ghast_tear     = 'regeneratio
                                                    speckled_melon = 'healing',
                                                    rabbit_foot    = 'leaping',
                                                    fish           = 'water breathing', -- TODO: DATA VALUES
-                                                   blaze_powder   = 'strength' } },
+                                                   blaze_powder   = 'strength',
+                                                   fermented_spider_eye = 'weakness' } },
                 glowstone_dust = 'thick_potion'  }
