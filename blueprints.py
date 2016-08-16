@@ -46,12 +46,7 @@ class Blueprint(object):
 
 
 	def toLuaArray(self):
-		# return '{{{}}}'.format()
-		# print(self.layers[0])
-		# for block in self.layers[0]: print(block)
-		# return '{{{0}}}'.format(', '.join('{0}\'{1}\''.format(' '*(24 - len(block)), block) for block in self.layers[0][0]))
-		# return ['{{{}}}'.format(', '.join('\'{0}\''.format(block) for block in layer)) for layer in self.layers][0]
-		return '{{{}}}'.format(',\n'.join(['{{{}}}'.format(', '.join('{0}\'{1}\''.format(' '*(24 - len(block)), block) for block in layer)) for layer in self.layers[0]]))
+		pass
 
 
 	def save(self, name, fn):
@@ -75,8 +70,8 @@ class Blueprint(object):
 		# TODO: Refactor
 
 		im     = Image.open(fn) #
-		pixels = im.load()   #
-		dx, dy = im.size
+		pixels = im.load()      #
+		dx, dy = im.size        #
 
 		framecolour = (0, 0, 0) # The colour of the frames around each vertical layer
 

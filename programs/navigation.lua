@@ -49,9 +49,36 @@ function Navigator.methods.inspect(nav, direction)
 	-- TODO: Allow any direction
 	local fs = { up = turtle.inspectUp, down = turtle.inspectDown, forward = turtle.inspect }
   local success, b = fs[direction]()
-  print(success, b)
   return success and b or { name='air' }
 end
+
+
+-- Table utilities
+-- TODO: Move to separate module
+function table.copyKeys(old, keys)
+	-- Shallow copy of the specified keys
+  local new = {}
+  for _, k in ipairs(keys) do new[k] = old[k] end
+  return new
+end
+
+
+function table.copy(old)
+	-- Shallow copy
+  local new = {}
+  for k, v in pairs(old) do new[k] = v end
+  return new
+end
+
+
+function table.merge(a, b)
+  local new = {}
+  for k, v in pairs(a) do new[k] = v end
+  for k, v in pairs(b) do new[k] = v end
+end
+
+
+-- function table.mergeWith(a,b, f) end
 
 
 -- Advanced movement
@@ -60,7 +87,7 @@ function Navigator.methods.area(nav, dx, dz, f)
   -- TODO: Options (eg. turn-right-first or turn-left-first)
   -- TODO: Smarter callbacks (eg. on-turn, on-new-row, etc.)
   -- TODO: What if the turtle is facing a different direction to begin with (?)
-  local start = nav.pos -- TODO: Should coords be relative to start or nav.home (?)
+  local start = table.copyKeys(nav, {'pos', 'facing'}) -- TODO: Should coords be relative to start or nav.home (?)
 
   for x = 1, dx do
     for z = 1, dz-1 do
@@ -82,6 +109,12 @@ function Navigator.methods.area(nav, dx, dz, f)
   end
 end
 
+
+function curried(a,b,c) return a*b*c end
+-- print(type(debug.getinfo(curried).short_src))
+info = debug.getinfo(curried, 'u')
+print(info.nparams)
+-- for k,v in pairs(debug.getinfo(curried, 'u')) do print(k,v) end
 -- function Navigator.methods.move(self, v) end
 -- function Navigator.methods.goto(self, v) end -- Screw you, Dijkstra
 -- function Navigator.methods.path(self, ?) end

@@ -19,15 +19,15 @@ local blueprint = {
 
 
 -- Helpers
-function one(blueprint, x, y, z)
+function one(nav, blueprint, x, y, z)
 -- function one(blueprint, blockmap, x, y, z)
   -- Prints a single block from a layer in a blueprint
 
   -- TODO: Increase robustness (fetching materials, unloading, clearing the way, refuelling)
-  
-  local nav = navigation.navigator()
+
   local block = blueprint[y][z][x]
   local slot  = inventory.find(block)
+
   if slot ~= nil then
     print(('Using block %s from slot %d'):format(block, slot))
     if turtle.detectDown() then
@@ -43,9 +43,9 @@ function one(blueprint, x, y, z)
 end
 
 
-function layer(blueprint)
+function layer(nav, blueprint)
 -- function layer(blueprint, blockmap)
-  area(nav, #blueprint[1], #blueprint, function(nav, x, y, z, _) one(blueprint, x, y, z) end)
+  area(nav, #blueprint[1], #blueprint, function(nav, x, y, z, _) one(nav, blueprint, x, y, z) end)
 end
 
 
