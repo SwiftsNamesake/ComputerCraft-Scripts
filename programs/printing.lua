@@ -31,8 +31,8 @@ function one(nav, blueprint, x, y, z)
   local current = nav:inspect('down')
 
   print('Block: ',   block)
-  print('Slot: ',    block)
-  print('Current: ', current)
+  print('Slot: ',    slot)
+  print('Current: ', current.name)
 
   if block == current.name then
     -- print((''))
