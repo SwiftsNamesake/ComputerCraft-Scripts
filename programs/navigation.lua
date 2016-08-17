@@ -100,7 +100,7 @@ function Navigator.methods.area(nav, dx, dz, f)
     f(nav, nav.pos.x, nav.pos.y, nav.pos.z, 'last')
 
     if x < dx then
-      local turn = (x%2 == 0) and nav.right or nav.left
+      local turn = (x%2 == 1) and nav.right or nav.left
       turn(nav)
       f(nav, nav.pos.x, nav.pos.y, nav.pos.z, 'turning')
       nav:forward()
