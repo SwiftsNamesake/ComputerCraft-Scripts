@@ -61,7 +61,8 @@ end
 function layer(nav, blueprint)
 -- function layer(nav, blueprint, blockmap)
   -- TODO: Clear the way, refuel, restock and unload (when necessary)
-  area(nav, #blueprint[1], #blueprint, 'right', function(nav, x, y, z, _) one(nav, blueprint, x, y, z) end)
+  print(('Printing a %dx%d layer'):format(#blueprint[1], #blueprint))
+  area(nav, #blueprint[1], #blueprint, 'right', function(nav, x, y, z, _) print(x,y,z) one(nav, blueprint, x, y, z) end)
 end
 
 
