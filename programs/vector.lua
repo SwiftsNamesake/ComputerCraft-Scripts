@@ -1,6 +1,7 @@
 -- Integer vectors
 -- vector.lua
 -- TODO: Scalar operations
+-- TODO: Enforce immutability (?)
 
 
 --
@@ -97,17 +98,17 @@ cardinals = { north = new( 0, 0,  1),
               east  = new( 1, 0,  0),
               west  = new(-1, 0,  0)}
 
--- local cardinals = { [new( 0, 0,  1)] = 'north', [new( 0, 0, -1)] = 'south', [new( 1, 0,  0)] = 'east', [new(-1, 0,  0)] = 'west'}
-function checks()
-  print(north == north)
-  print(north:rotateY(1) == east)
-  print(north:rotateY(2) == south)
-  print(north:rotateY(3) == west)
-  print(north:rotateY(4) == north)
-  print(north:rotateY(5) == east)
-  print(north:rotateY(6) == south)
 
-  print(north:rotateY(2) == south)
+function checks()
+  print(cardinals.north == cardinals.north)
+  print(cardinals.north:rotateY(1) == cardinals.cardinals.east)
+  print(cardinals.north:rotateY(2) == cardinals.south)
+  print(cardinals.north:rotateY(3) == cardinals.west)
+  print(cardinals.north:rotateY(4) == cardinals.north)
+  print(cardinals.north:rotateY(5) == cardinals.east)
+  print(cardinals.north:rotateY(6) == cardinals.south)
+
+  print(cardinals.north:rotateY(2) == cardinals.south)
 end
 
 

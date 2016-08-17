@@ -25,32 +25,38 @@ function one(nav, blueprint, x, y, z)
 
   -- TODO: Increase robustness (fetching materials, unloading, clearing the way, refuelling)
   -- TODO: Returned detailed outcome summary (eg. { succeeded=true, block='minecraft:air' }) (?)
+
+  local block   = blueprint[y][z][x]
+  local slot    = inventory.find(block)
+  local current = nav:inspect('down')
+
+  if block == current.name then
+    -- print((''))
+    return true
   
-  local block = blueprint[y][z][x]
-  local slot  = inventory.find(block)
-  
-  if block == 'minecraft:air' then
-    if turtle.detectDown() then turtle.digDown() end
-    return false
+  elseif block == 'minecraft:air' then
+    turtle.digDown()
+    return true
+
   elseif slot ~= nil then
     print(('Using block %s from slot %d'):format(block, slot))
-    if turtle.detectDown() then
-      -- TODO: Don't dig if it's the right block
-      turtle.digDown()
-    end
+    turtle.digDown() -- TODO Wrap in if-statement (?)
     turtle.select(slot)
-    turtle.placeDown(slot)
+    turtle.placeDown()
     return true
+
   else
     print(('Missing block %s'):format(block))
     -- TODO: Take action
     return false
   end
+
 end
 
 
 function layer(nav, blueprint)
 -- function layer(blueprint, blockmap)
+  -- TODO: Clear the way, refuel, restock and unload (when necessary)
   area(nav, #blueprint[1], #blueprint, function(nav, x, y, z, _) one(nav, blueprint, x, y, z) end)
 end
 

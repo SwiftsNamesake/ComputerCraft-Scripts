@@ -75,33 +75,14 @@ function excavateThree(nav, dx, dz)
 
   area(nav, dx, dz, function(nav, x, y, z, where)
     
-    if where == '' then
+    if where == 'middle' then
       miner.digAll()
-    elseif where == 'last'
+    elseif where == 'last' then
       miner.digUp()
       miner.digDown()
     end
 
   end)
-
-  for x=1,dx do
-    for z=1,dz-1 do
-      miner.digAll()
-      miner.forward()
-    end
-    
-    turtle.digUp()
-    turtle.digDown()
-
-    if x < dx then
-      local turn = (x%2 == rightWhen) and miner.right or miner.left
-      turn()
-      turtle.dig()
-      miner.forward()
-      turn()
-    end
-
-  end
 end
 
 

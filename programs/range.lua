@@ -91,6 +91,11 @@ function Range.methods.findWith(r, p)
 end
 
 
+function Range.methods.contains(r, e)
+  return r:find(e) ~= nil
+end
+
+
 function Range.methods.filter(r, p)
   local new = {}
   for i=1,#r do
