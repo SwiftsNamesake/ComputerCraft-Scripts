@@ -22,9 +22,10 @@ local miner = {}
 
 
 function miner.digAll()
-  turtle.digUp()
-  turtle.digDown()
-  turtle.dig()
+  --
+  while turtle.detectUp()   do turtle.digUp()   end
+  while turtle.detectDown() do turtle.digDown() end
+  while turtle.detect()     do turtle.dig()     end
 end
 
 
