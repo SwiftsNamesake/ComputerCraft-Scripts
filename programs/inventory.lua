@@ -1,5 +1,9 @@
 --
-os.loadAPI('utils/range')
+
+--
+if turtle then
+	os.loadAPI('utils/range')
+end
 
 
 --

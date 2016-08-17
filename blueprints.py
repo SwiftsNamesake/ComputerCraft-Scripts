@@ -46,18 +46,25 @@ class Blueprint(object):
 
 
   def toLuaArray(self):
-    # TODO: Let's not go overboard with the obscure oneliners, alright? (recurse?)
-    def showBlock(b, i=None):
-      l = max(len(block) for block in self.blockmap.values())
-      return repr(b).rjust(l+2, ' ')
     
-    def showRow(r, i=None):
-      return '        {{ {0} }}'.format(', '.join(showBlock(block) for block in r))
+    # TODO: Simplify further (use multiline literals?)
+    # columnWidths = [max(len(block))]
+
+    indent = 2 # Spaces per indentation level
+
+    def showBlock(b, pad=0, i=None):
+      # l = max(len(block) for block in self.blockmap.values())
+      return repr(b[len('minecraft:'):]).rjust(pad, ' ')
+    
+    def showRow(r, columnWidths, i=None):
+      return '{{ {0} }}'.format(', '.join(showBlock(block, pad=width) for block, width in zip(r, columnWidths)))
     
     def showLayer(l, i=None):
-      return '\n    {{ {0} }}\n'.format(',\n'.join(showRow(row) for row in l))
+      pad = 1
+      columnWidths = [max(len(showBlock(block)) for block in (r[i] for r in l))+pad for i,_ in enumerate(l[0])]
+      return '{{\n{1}{1}{0}\n{1}}}'.format(',\n{0}{0}'.format(' ' * indent).join(showRow(row, columnWidths) for row in l), ' ' * indent)
     
-    return '{{ {0} }}'.format(',\n'.join(showLayer(layer) for layer in self.layers))
+    return '{{\n{1}{0}\n}}'.format(',\n\n{0}'.format(' ' * indent).join(showLayer(layer) for layer in self.layers), ' ' * indent)
 
 
   def save(self, name, fn):

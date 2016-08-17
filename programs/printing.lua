@@ -26,7 +26,7 @@ function one(nav, blueprint, x, y, z)
   -- TODO: Increase robustness (fetching materials, unloading, clearing the way, refuelling)
   -- TODO: Returned detailed outcome summary (eg. { succeeded=true, block='minecraft:air' }) (?)
 
-  local block   = blueprint[y][z][x]
+  local block   = 'minecraft:' .. blueprint[y][z][x]
   local slot    = inventory.find(block)
   local current = nav:inspect('down')
 
