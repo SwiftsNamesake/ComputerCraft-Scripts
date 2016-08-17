@@ -29,6 +29,7 @@ function one(nav, blueprint, x, y, z)
     return true
   
   elseif block == 'minecraft:air' then
+    print('Creating air')
     turtle.digDown()
     return true
 
