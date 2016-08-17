@@ -7,17 +7,6 @@ if turtle then
 end
 
 
---
--- TODO: Figure out how to interpret coordinates
-local blueprint = {
-  {'x', ' ', 'x', ' ', 'x'},
-  {' ', 'x', ' ', 'x', ' '},
-  {'x', ' ', 'x', ' ', 'x'},
-  {' ', 'x', ' ', 'x', ' '},
-  {'x', ' ', 'x', ' ', 'x'}
-}
-
-
 -- Helpers
 function one(nav, blueprint, x, y, z)
 -- function one(blueprint, blockmap, x, y, z)
@@ -26,6 +15,7 @@ function one(nav, blueprint, x, y, z)
   -- TODO: Increase robustness (fetching materials, unloading, clearing the way, refuelling)
   -- TODO: Returned detailed outcome summary (eg. { succeeded=true, block='minecraft:air' }) (?)
 
+  -- TODO: Figure out how to interpret coordinates
   local block   = 'minecraft:' .. blueprint[y][z][x]
   local slot    = inventory.find(block)
   local current = nav:inspect('down')
@@ -35,7 +25,7 @@ function one(nav, blueprint, x, y, z)
   print('Current: ', current.name)
 
   if block == current.name then
-    -- print((''))
+    print(('No need to do anyhing, the right block is already in place (%s/%s)'):format(current.name, block))
     return true
   
   elseif block == 'minecraft:air' then
