@@ -58,11 +58,13 @@ end
 -- function resourceCount() end
 
 
-function layer(nav, blueprint)
+function layer(nav, blueprint, which, firstTurn)
 -- function layer(nav, blueprint, blockmap)
   -- TODO: Clear the way, refuel, restock and unload (when necessary)
-  print(('Printing a %dx%d layer'):format(#blueprint[1], #blueprint))
-  nav:area(#blueprint[1], #blueprint, 'right', function(nav, x, y, z, _) print(x,y,z) one(nav, blueprint, x, y, z) end)
+  -- TODO: How to deal with nav w.r.t home
+  local thelayer = blueprint[which] --
+  print(('Printing a %dx%d layer'):format(#thelayer[1], #thelayer))
+  nav:area(#thelayer[1], #thelayer, firstTurn, function(nav, x, y, z, _) print(x,y,z) one(nav, blueprint, x, y, z) end)
 end
 
 
