@@ -12,7 +12,7 @@ end
 function find(block)
   -- Finds the first slot which has the given block
   -- TODO: Block data
-  range.range(1,16):findWith(function(i) return hasBlock(i, block) end)
+  return range.range(1,16):findWith(function(i) return hasBlock(i, block) end)
 end
 
 
