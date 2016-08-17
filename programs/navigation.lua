@@ -87,6 +87,9 @@ function Navigator.methods.area(nav, dx, dz, firstTurn, f)
   -- TODO: Options (eg. turn-right-first or turn-left-first)
   -- TODO: Smarter callbacks (eg. on-turn, on-new-row, etc.)
   -- TODO: What if the turtle is facing a different direction to begin with (?)
+
+  -- TODO: Deal with 1-based indexing
+  
   local start = table.copyKeys(nav, {'pos', 'facing'}) -- TODO: Should coords be relative to start or nav.home (?)
 
   for x = 1, dx do
