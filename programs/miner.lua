@@ -88,7 +88,7 @@ function excavateThree(nav, dx, dz, firstTurn)
   
   miner.descend()
 
-  nav:area(dx, dz, firstTurn, function(nav, x, y, z, where)
+  nav:area(dx, dz, firstTurn, function(nav, rel, where)
     
     if where == 'middle' then
       miner.digAll()

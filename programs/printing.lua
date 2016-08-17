@@ -65,7 +65,7 @@ function layer(nav, blueprint, which, firstTurn)
   -- TODO: How to deal with nav w.r.t home
   local thelayer = blueprint[which] --
   print(('Printing a %dx%d layer'):format(#thelayer[1], #thelayer))
-  nav:area(#thelayer[1], #thelayer, firstTurn, function(nav, x, y, z, _) print(x+1,y+1,z+1) one(nav, blueprint, x+1, y+1, z+1) end)
+  nav:area(#thelayer[1], #thelayer, firstTurn, function(nav, x, y, z, _) print(x,y,z) one(nav, blueprint, x, y, z) end)
 end
 
 

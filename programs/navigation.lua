@@ -1,5 +1,12 @@
 --
 
+-- We'll need these
+if turtle then
+	os.loadAPI('utils/vector')
+end
+
+
+--
 local Navigator = { meta = {}, methods = {} }
 
 
@@ -89,7 +96,7 @@ function Navigator.methods.area(nav, dx, dz, firstTurn, f)
   -- TODO: What if the turtle is facing a different direction to begin with (?)
 
   -- TODO: Deal with 1-based indexing
-  
+
   local start = table.copyKeys(nav, {'pos', 'facing'}) -- TODO: Should coords be relative to start or nav.home (?)
 
   for x = 1, dx do
@@ -100,7 +107,7 @@ function Navigator.methods.area(nav, dx, dz, firstTurn, f)
       nav:forward()
     end
 
-    f(nav, nav.pos.x, nav.pos.y, nav.pos.z, 'last')
+    f(nav, start, { pos = nav.pos - start.pos + vec(1,1,1),  }, 'last')
 
     if x < dx then
     	-- TODO: Make sure firstTurn is either right or left
