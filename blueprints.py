@@ -17,7 +17,7 @@ def main():
 	'''
 
 	bp = Blueprint.load('C:/Users/Jonatan/Pictures/Minecraft blueprints/mobgrinder.png', {
-			(255, 255, 255): ' ',                       # Air
+			(255, 255, 255): 'minecraft:air',           # Air
 			(191,  16, 250): 'minecraft:stonebrick',    # Exterior walls
 			(130,  52,   0): 'minecraft:redstone_lamp', # Redstone lamps
 			(255, 127,  39): 'minecraft:stone',         # Floors and pedestals
@@ -46,7 +46,9 @@ class Blueprint(object):
 
 
 	def toLuaArray(self):
-		pass
+		# TODO: Let's not go overboard with the obscure oneliners, alright? (recurse?)
+		l = max(len(block) for block in self.blockmap.values())
+		return '{{ {0} }}'.format(', '.join(', '.join('{{ {0} }}\n'.format(', '.join(repr(block.rjust(l, ' ')) for block in row)) for row in layer) for layer in self.layers))
 
 
 	def save(self, name, fn):

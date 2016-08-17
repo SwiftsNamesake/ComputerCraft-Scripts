@@ -1,4 +1,6 @@
---
+-- 
+-- TODO: Rename (most methods are generic list operations)
+
 local Range = { meta    = {},
                 methods = {} }
 
@@ -99,7 +101,7 @@ end
 function Range.methods.filter(r, p)
   local new = {}
   for i=1,#r do
-  	if p(r[i]) then new[#new+1] = r[i] end
+    if p(r[i]) then new[#new+1] = r[i] end
   end
   return lift(new)
 end
@@ -111,7 +113,9 @@ end
 -- function Range.methods.concat() end
 
 
-print(#range(2,10,2), range(1,5))
-print(range(2,10,2) .. range(6,10))
-print(table.concat({1,2,3}, ','))
-print(range(1,4):sum())
+function checks()
+  print(#range(2,10,2), range(1,5))
+  print(range(2,10,2) .. range(6,10))
+  print(table.concat({1,2,3}, ','))
+  print(range(1,4):sum())
+end

@@ -1,5 +1,8 @@
 -- miner.lua
 
+-- TODO: Branch mining
+-- TODO: Surveying (eg. reporting vein findings)
+-- TODO: Modems
 
 -- We'll need these
 if turtle then
@@ -30,20 +33,31 @@ end
 
 
 
-function miner.refuel()
+function miner.refuel(nav)
   -- TODO: Move to navigation (?)
   -- TODO: FINISH
   print('ATTEMTPING TO CALL UNIMPLEMENTED FUNCTION miner.refuel')
-  range(1,16):map(function (n)
-    turtle.select(n)
-  end)
+  return nil
+
+  local slot     = turtle.getSelectedSlot()
+  local fuelSlot = range(1,16):findWith(inventory.isFuel) --
+  
+  if slot ~= nil then
+    turtle.select(fuelSlot) --
+    turtle.refuel(_)        -- TODO: How much (?)
+    turtle.select(slot)     --
+  else
+    nav:goto(nav.home) -- Fuel chest is assumed to be right next to the home block
+    -- TODO: Take fuel and use it
 end
 
 
-function miner.unload()
+function miner.unload(nav)
   -- TODO: Move to navigation (?)
   -- TODO: IMPLEMENT
   print('ATTEMTPING TO CALL UNIMPLEMENTED FUNCTION miner.unload')
+
+
 end
 
 

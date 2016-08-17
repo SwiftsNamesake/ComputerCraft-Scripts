@@ -38,4 +38,10 @@ function save(fn, to)
 end
 
 
+
+function all(fn)
+  -- 
+end
+
+
 -- load('programs/vector.lua')
