@@ -103,17 +103,18 @@ function Navigator.methods.area(nav, dx, dz, firstTurn, f)
     for z = 1, dz-1 do
       -- TODO: Work out coordinates within the 'grid' properly (not the same as indices since turtle changes direction)
       -- TODO: More fine-grained callback data (eg. start, middle, last) (?)
-      f(nav, nav.pos.x, nav.pos.y, nav.pos.z, 'middle')
+      f(nav, start, 'middle')
       nav:forward()
     end
 
-    f(nav, start, { pos = nav.pos - start.pos + vec(1,1,1),  }, 'last')
+    -- f(nav, start, { pos = nav.pos - start.pos + vec(1,1,1),  }, 'last')
+    f(nav, start, 'last')
 
     if x < dx then
     	-- TODO: Make sure firstTurn is either right or left
       local turn = (x%2 == ((firstTurn == 'right') and 1 or 0)) and nav.right or nav.left
       turn(nav)
-      f(nav, nav.pos.x, nav.pos.y, nav.pos.z, 'turning')
+      f(nav, start, 'turning')
       nav:forward()
       turn(nav)
     end      
