@@ -81,6 +81,8 @@ function excavateThree(nav, dx, dz)
     elseif where == 'last' then
       turtle.digUp()
       turtle.digDown()
+    elseif where == 'turning' then
+      miner.digAll()
     end
 
   end)
