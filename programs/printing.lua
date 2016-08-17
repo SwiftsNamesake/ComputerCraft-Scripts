@@ -23,7 +23,7 @@ function one(nav, blueprint, x, y, z)
   -- TODO: Figure out how to interpret coordinates
 
   print(x,y,z)
-  
+
   local block   = 'minecraft:' .. blueprint[y][z][x]
   local slot    = inventory.find(block)
   local current = nav:inspect('down')
@@ -68,7 +68,7 @@ function layer(nav, blueprint, which, firstTurn)
   -- TODO: How to deal with nav w.r.t home
   local thelayer = blueprint[which] --
   print(('Printing a %dx%d layer'):format(#thelayer[1], #thelayer))
-  nav:area(#thelayer[1], #thelayer, firstTurn, function(nav, start, _) one(nav, blueprint, x+1, y+1, z+1) end)
+  nav:area(#thelayer[1], #thelayer, firstTurn, function(nav, start, _) one(nav, blueprint, nav.pos.x+1, nav.pos.y+1, nav.pos.z+1) end)
 end
 
 
