@@ -78,8 +78,8 @@ function excavateThree(nav, dx, dz)
     if where == 'middle' then
       miner.digAll()
     elseif where == 'last' then
-      miner.digUp()
-      miner.digDown()
+      turtle.digUp()
+      turtle.digDown()
     end
 
   end)
