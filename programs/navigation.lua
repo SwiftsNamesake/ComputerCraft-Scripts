@@ -110,10 +110,10 @@ function Navigator.methods.area(nav, dx, dz, f)
 end
 
 
-function curried(a,b,c) return a*b*c end
+-- function curried(a,b,c) return a*b*c end
 -- print(type(debug.getinfo(curried).short_src))
-info = debug.getinfo(curried, 'u')
-print(info.nparams)
+-- info = debug.getinfo(curried, 'u')
+-- print(info.nparams)
 -- for k,v in pairs(debug.getinfo(curried, 'u')) do print(k,v) end
 -- function Navigator.methods.move(self, v) end
 -- function Navigator.methods.goto(self, v) end -- Screw you, Dijkstra
