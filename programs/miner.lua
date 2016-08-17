@@ -73,7 +73,7 @@ function excavateThree(nav, dx, dz)
   
   miner.descend()
 
-  area(nav, dx, dz, function(nav, x, y, z, where)
+  nav:area(dx, dz, function(nav, x, y, z, where)
     
     if where == 'middle' then
       miner.digAll()
