@@ -64,7 +64,7 @@ end
 
 --
 -- function excavateThree(nav, dx, dz, rightWhen)
-function excavateThree(nav, dx, dz)
+function excavateThree(nav, dx, dz, firstTurn)
   -- Excavate three vertical layers.
   -- 
   -- The X, Y and Z axes are defined relative to the turtle's original position;
@@ -74,7 +74,7 @@ function excavateThree(nav, dx, dz)
   
   miner.descend()
 
-  nav:area(dx, dz, function(nav, x, y, z, where)
+  nav:area(dx, dz, firstTurn, function(nav, x, y, z, where)
     
     if where == 'middle' then
       miner.digAll()

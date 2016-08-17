@@ -82,7 +82,7 @@ end
 
 
 -- Advanced movement
-function Navigator.methods.area(nav, dx, dz, f)
+function Navigator.methods.area(nav, dx, dz, firstTurn, f)
   --
   -- TODO: Options (eg. turn-right-first or turn-left-first)
   -- TODO: Smarter callbacks (eg. on-turn, on-new-row, etc.)
@@ -100,7 +100,8 @@ function Navigator.methods.area(nav, dx, dz, f)
     f(nav, nav.pos.x, nav.pos.y, nav.pos.z, 'last')
 
     if x < dx then
-      local turn = (x%2 == 1) and nav.right or nav.left
+    	-- TODO: Make sure firstTurn is either right or left
+      local turn = (x%2 == ((firstTurn == 'right') and 1 or 0)) and nav.right or nav.left
       turn(nav)
       f(nav, nav.pos.x, nav.pos.y, nav.pos.z, 'turning')
       nav:forward()
