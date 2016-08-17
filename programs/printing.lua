@@ -1,4 +1,9 @@
 --
+
+-- TODO: Wild-card blocks
+-- TODO: Customisation callbacks
+
+--
 if turtle then
   os.loadAPI('utils/vector')
   os.loadAPI('utils/inventory')
@@ -30,8 +35,9 @@ function one(nav, blueprint, x, y, z)
   
   elseif block == 'minecraft:air' then
     print('Creating air')
-    turtle.digDown()
-    return true
+    local canDig = turtle.digDown()
+    if not canDig then print('Cannot dig') end
+    return canDig
 
   elseif slot ~= nil then
     print(('Using block %s from slot %d'):format(block, slot))

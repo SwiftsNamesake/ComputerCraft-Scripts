@@ -2,6 +2,9 @@
 -- vector.lua
 -- TODO: Scalar operations
 -- TODO: Enforce immutability (?)
+-- TODO: Polar coords
+-- TODO: Integer and right angle optimisations
+-- TODO: Coordinate system encoding and transforms
 
 
 --
@@ -58,6 +61,13 @@ function Vector.ops.abs(v)
 end
 
 
+function Vector.ops.arg(v)
+  -- Angle between the vector and the positive X-axis in the XZ plane in radians (clockwise)
+  -- TODO: Optimised integer version (cf. modulus) (?)
+  return math.acos(v.x/v:abs().x)
+end
+
+
 -- Numeric binary operators
 function Vector.meta.__add(v, other)
   return new(v.x+other.x, v.y+other.y, v.z+other.z)
@@ -78,10 +88,11 @@ end
 function Vector.ops.rotateY(v, quarters)
   -- Rotate the vector clockwise about the Y-axis
   -- TODO: FINISH THIS
-  local radians = -quarters/4 * 2*math.pi + math.pi/2 -- TODO: Simplify
+  local radians = -((quarters/4) * 2*math.pi) + v:arg() -- TODO: Simplify
   local size    = v:abs().x
   -- print(size, radians, math.cos(radians), math.sin(radians))
-  return new(math.floor(size*math.cos(radians) + 0.5), 0, math.floor(size*math.sin(radians) + 0.5))
+  if size ~= 1 then print('NOOOOOOOO') end
+  return new(math.floor(size*math.cos(radians) + 0.5), v.y, math.floor(size*math.sin(radians) + 0.5))
 end
 
 
@@ -99,17 +110,34 @@ cardinals = { north = new( 0, 0,  1),
               west  = new(-1, 0,  0)}
 
 
+cardinals.tostring = function (v)
+  if v == cardinals.north then return 'North' end
+  if v == cardinals.south then return 'South' end
+  if v == cardinals.east  then return 'East'  end
+  if v == cardinals.west  then return 'West'  end
+end
+
+
 function checks()
   print(cardinals.north == cardinals.north)
-  print(cardinals.north:rotateY(1) == cardinals.cardinals.east)
+  print(cardinals.north:rotateY(1) == cardinals.east)
   print(cardinals.north:rotateY(2) == cardinals.south)
   print(cardinals.north:rotateY(3) == cardinals.west)
   print(cardinals.north:rotateY(4) == cardinals.north)
   print(cardinals.north:rotateY(5) == cardinals.east)
   print(cardinals.north:rotateY(6) == cardinals.south)
 
+  print('If we face East and then turn right we will be looking towards the South', cardinals.east:rotateY(1) == cardinals.south)
+
+  print(cardinals.tostring(cardinals.north:rotateY(1)), 'East')
+  print(cardinals.tostring(cardinals.north:rotateY(2)), 'South')
+  print(cardinals.tostring(cardinals.north:rotateY(3)), 'West')
+  print(cardinals.tostring(cardinals.north:rotateY(4)), 'North')
+  print(cardinals.tostring(cardinals.north:rotateY(5)), 'East')
+  print(cardinals.tostring(cardinals.east:rotateY(1)))
+
   print(cardinals.north:rotateY(2) == cardinals.south)
 end
 
 
--- checks()
+checks()
