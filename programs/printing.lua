@@ -30,6 +30,8 @@ function one(nav, blueprint, x, y, z)
   local slot    = inventory.find(block)
   local current = nav:inspect('down')
 
+  print('Block: ', block)
+
   if block == current.name then
     -- print((''))
     return true
