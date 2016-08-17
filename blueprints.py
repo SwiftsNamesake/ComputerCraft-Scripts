@@ -48,7 +48,7 @@ class Blueprint(object):
 	def toLuaArray(self):
 		# TODO: Let's not go overboard with the obscure oneliners, alright? (recurse?)
 		l = max(len(block) for block in self.blockmap.values())
-		return '{{ {0} }}'.format(', '.join(', '.join('{{ {0} }}\n'.format(', '.join(repr(block.rjust(l, ' ')) for block in row)) for row in layer) for layer in self.layers))
+		return '{{ {0} }}'.format('{{ {0} }}'.format(', '.join(', '.join('{{ {0} }}\n'.format(', '.join(repr(block.rjust(l, ' ')) for block in row)) for row in layer) for layer in self.layers)))
 
 
 	def save(self, name, fn):
