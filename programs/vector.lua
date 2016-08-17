@@ -64,7 +64,7 @@ end
 function Vector.ops.arg(v)
   -- Angle between the vector and the positive X-axis in the XZ plane in radians (clockwise)
   -- TODO: Optimised integer version (cf. modulus) (?)
-  return math.acos(v.x/v:abs().x)
+  return -math.acos(v.x/v:abs().x)
 end
 
 
