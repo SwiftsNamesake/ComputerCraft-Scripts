@@ -22,9 +22,8 @@ function one(nav, blueprint, x, y, z)
 
   -- TODO: Figure out how to interpret coordinates
 
-  print(x,y,z)
-  print(nav.pos)
-  print(nav.facing)
+  print('Pos', nav.pos, x, y, z)
+  print('Facing', nav.facing)
 
   local block   = 'minecraft:' .. blueprint[y][z][x]
   local slot    = inventory.find(block)
