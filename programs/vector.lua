@@ -7,6 +7,15 @@
 -- TODO: Coordinate system encoding and transforms
 
 
+-- We'll need these
+if turtle then
+  os.loadAPI('utils/range')
+else
+  range = require 'range'
+  print('Range', range)
+end
+
+
 --
 local Vector = { meta = {},
                  ops = {}}
@@ -62,9 +71,16 @@ end
 
 
 function Vector.ops.arg(v)
-  -- Angle between the vector and the positive X-axis in the XZ plane in radians (clockwise)
+  -- Angle in clockwise quarter turns from the North axis
   -- TODO: Optimised integer version (cf. modulus) (?)
-  return -math.acos(v.x/v:abs().x)
+  local angles = { cardinals.north, cardinals.east, cardinals.south, cardinals.west }
+  local which  = range.lift(angles):find(v) - 1
+  return which
+
+
+
+  -- Angle between the vector and the positive X-axis in the XZ plane in radians (clockwise)
+  -- return -math.acos(v.x/v:abs().x)
 end
 
 
@@ -86,13 +102,8 @@ end
 
 -- Other methods
 function Vector.ops.rotateY(v, quarters)
-  -- Rotate the vector clockwise about the Y-axis
-  -- TODO: FINISH THIS
-  local radians = -((quarters/4) * 2*math.pi) + v:arg() -- TODO: Simplify
-  local size    = v:abs().x
-  -- print(size, radians, math.cos(radians), math.sin(radians))
-  if size ~= 1 then print('NOOOOOOOO') end
-  return new(math.floor(size*math.cos(radians) + 0.5), v.y, math.floor(size*math.sin(radians) + 0.5))
+  local angles = { cardinals.north, cardinals.east, cardinals.south, cardinals.west }
+  return angles[((v:arg() + quarters) % 4) + 1]
 end
 
 
@@ -119,6 +130,14 @@ end
 
 
 function checks()
+  
+  print('Arg checks')
+  print(cardinals.north:arg())
+  print(cardinals.east:arg())
+  print(cardinals.south:arg())
+  print(cardinals.west:arg())
+
+  print('Rotation checks')
   print(cardinals.north == cardinals.north)
   print(cardinals.north:rotateY(1) == cardinals.east)
   print(cardinals.north:rotateY(2) == cardinals.south)

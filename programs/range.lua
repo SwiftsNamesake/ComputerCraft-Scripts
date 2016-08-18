@@ -5,6 +5,7 @@ local Range = { meta    = {},
                 methods = {} }
 
 
+
 -- Constructors
 function lift(r)
   setmetatable(r, Range.meta)
@@ -119,3 +120,7 @@ function checks()
   print(table.concat({1,2,3}, ','))
   print(range(1,4):sum())
 end
+
+
+local exports = { lift = lift, range = range }
+return exports
