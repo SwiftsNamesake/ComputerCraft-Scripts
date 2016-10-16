@@ -108,6 +108,14 @@ function Range.methods.filter(r, p)
 end
 
 
+-- function Range.methods.groupBy(r, f)
+--   if f()
+-- end
+
+
+-- function Range.methods.sortBy(r, cmp) end
+
+
 function Range.methods.sum(r)
   return r:foldl(function(a,b) return a+b end, 0)
 end

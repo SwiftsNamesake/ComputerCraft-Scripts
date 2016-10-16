@@ -16,6 +16,7 @@ def main():
 
   '''
 
+  # Mob grinder
   bp = Blueprint.load('C:/Users/Jonatan/Pictures/Minecraft blueprints/mobgrinder.png', {
       (255, 255, 255): 'minecraft:air',           # Air
       (191,  16, 250): 'minecraft:stonebrick',    # Exterior walls
@@ -29,6 +30,14 @@ def main():
   })
 
   bp.save('mobgrinder', 'blueprints/mobgrinder.lua')
+
+  # Ender pad
+  bp = Blueprint.load('C:/Users/Jonatan/Pictures/Minecraft blueprints/enderpad-plain.png', {
+    (255, 255, 255, 255): 'minecraft:air',       # Air
+    ( 63,  72, 204, 255): 'minecraft:end_bricks' # 
+  })
+
+  bp.save('mobgrinder', 'blueprints/enderpad.lua')
   # print(bp.toLuaArray())
 
 
@@ -90,13 +99,15 @@ class Blueprint(object):
     im     = Image.open(fn) #
     pixels = im.load()      #
     dx, dy = im.size        #
-
-    framecolour = (0, 0, 0) # The colour of the frames around each vertical layer
-
-    assert all(pixels[x, 0]    == framecolour for x in range(dx)), 'Blueprint must have valid layer borders' # Upper border
+    
+    framecolour = (0, 0, 0) if len(pixels[0,0]) == 3 else (0,0,0,255) # The colour of the frames around each vertical layer
+    
+    print(framecolour)
+    assert all(pixels[x, 0]    == framecolour for x in range(dx)), 'Blueprint must have valid layer borders ({})'.format([pixels[x,0] for x in range(dx)]) # Upper border
     assert all(pixels[x, dy-1] == framecolour for x in range(dx)), 'Blueprint must have valid layer borders' # Lower border
 
     verticalBorders = [x for x in range(dx) if pixels[x, 1] == framecolour] #
+    print(verticalBorders)
     assert verticalBorders == [x for x in range(0, dx, verticalBorders[1]-verticalBorders[0])], 'All layers must be the same size' #
 
     framesize = (verticalBorders[1]-verticalBorders[0], dy)
@@ -104,6 +115,7 @@ class Blueprint(object):
     layers = []
 
     for layer in verticalBorders[:-1]:
+      print(layer)
       layers.append([[blockmap[pixels[x+layer,y]] for x in range(1, framesize[0]-1)] for y in range(1, framesize[1]-1)])
 
     return Blueprint(layers, blockmap)

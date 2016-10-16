@@ -2,6 +2,13 @@
 
 -- TODO: Wild-card blocks
 -- TODO: Customisation callbacks
+-- TODO: Fuel and material requirements
+-- TODO: Interaction (cf. customisation callbacks) (eg. wait for fuel/blocks refill, skip layers, pause, goto, wireless)
+-- TODO: GPS integration
+
+-- TODO: Print order, vertical/horizontal layering
+
+-- TODO: Elaborate logging (save to file)
 
 --
 if turtle then
@@ -10,6 +17,10 @@ if turtle then
   os.loadAPI('utils/navigation')
   os.loadAPI('utils/range')
 end
+
+
+--
+-- local Printer = { meta = _, methods = _ }
 
 
 -- Helpers
@@ -63,6 +74,12 @@ end
 -- function resourceCount() end
 
 
+function optimisePath()
+  -- 
+  -- TODO: Disallow straying outside the borders (useful for building or 'carving' inside confined spaces, without ruining stuff that's nearby)
+end
+
+
 function layer(nav, blueprint, which, firstTurn)
 -- function layer(nav, blueprint, blockmap)
   -- TODO: Clear the way, refuel, restock and unload (when necessary)
@@ -70,6 +87,11 @@ function layer(nav, blueprint, which, firstTurn)
   local thelayer = blueprint[which] --
   print(('Printing a %dx%d layer'):format(#thelayer[1], #thelayer))
   nav:area(#thelayer[1], #thelayer, firstTurn, function(nav, start, _) one(nav, blueprint, nav.pos.x+1, nav.pos.y+1, nav.pos.z+1) end)
+end
+
+
+function layers(nav, blueprint, which, firstTurn)
+
 end
 
 
